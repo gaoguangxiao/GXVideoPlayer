@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GXVideoPlayer_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3t-6O-wJh">
+                                <rect key="frame" x="142.5" y="270" width="90" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cIg-ev-Us6"/>
+                                    <constraint firstAttribute="width" constant="90" id="jDZ-GL-xcF"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="播放视频"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LwK-fE-rn0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BY-CM-6gT">
+                                <rect key="frame" x="142.5" y="330" width="90" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BQl-ur-Zn4"/>
+                                    <constraint firstAttribute="width" constant="90" id="aQZ-aI-htI"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="暂停视频"/>
+                                <connections>
+                                    <action selector="pauseVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZbI-zm-pj3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADK-Ew-Eyl">
+                                <rect key="frame" x="132" y="390" width="111" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HA3-0b-xiO"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="继续播放视频"/>
+                                <connections>
+                                    <action selector="resumeVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qTq-Ys-MVF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOt-aw-MGe">
+                                <rect key="frame" x="150.5" y="450" width="74" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="59H-j5-B5j"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="销毁视频"/>
+                                <connections>
+                                    <action selector="destroyVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="beB-fp-FuF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftq-Xy-rom">
+                                <rect key="frame" x="150.5" y="510" width="74" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T8G-Mm-scz"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="跳转某段"/>
+                                <connections>
+                                    <action selector="seekVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aCG-7I-Stg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i20-8b-K83">
+                                <rect key="frame" x="244.5" y="510" width="84" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ykq-FV-wrM"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="2倍速播放"/>
+                                <connections>
+                                    <action selector="rateVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8mE-gm-52j"/>
+                                    <action selector="seekVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xk4-Hw-zpo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ftq-Xy-rom" firstAttribute="centerX" secondItem="XOt-aw-MGe" secondAttribute="centerX" id="5Qa-zi-S3p"/>
+                            <constraint firstItem="ADK-Ew-Eyl" firstAttribute="top" secondItem="8BY-CM-6gT" secondAttribute="bottom" constant="20" id="APR-EB-b8J"/>
+                            <constraint firstItem="ADK-Ew-Eyl" firstAttribute="centerX" secondItem="z3t-6O-wJh" secondAttribute="centerX" id="NEf-1I-LYZ"/>
+                            <constraint firstItem="z3t-6O-wJh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="QnH-k9-UYg"/>
+                            <constraint firstItem="z3t-6O-wJh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="250" id="bY9-zI-l2J"/>
+                            <constraint firstItem="ftq-Xy-rom" firstAttribute="top" secondItem="XOt-aw-MGe" secondAttribute="bottom" constant="20" id="fP1-tf-CXi"/>
+                            <constraint firstItem="8BY-CM-6gT" firstAttribute="centerX" secondItem="z3t-6O-wJh" secondAttribute="centerX" id="gET-JO-Pdw"/>
+                            <constraint firstItem="i20-8b-K83" firstAttribute="leading" secondItem="ftq-Xy-rom" secondAttribute="trailing" constant="20" id="mzE-2U-uxJ"/>
+                            <constraint firstItem="8BY-CM-6gT" firstAttribute="top" secondItem="z3t-6O-wJh" secondAttribute="bottom" constant="20" id="n58-WR-FMs"/>
+                            <constraint firstItem="i20-8b-K83" firstAttribute="centerY" secondItem="ftq-Xy-rom" secondAttribute="centerY" id="rvE-Rm-dn8"/>
+                            <constraint firstItem="XOt-aw-MGe" firstAttribute="top" secondItem="ADK-Ew-Eyl" secondAttribute="bottom" constant="20" id="tEa-gc-Kh8"/>
+                            <constraint firstItem="XOt-aw-MGe" firstAttribute="centerX" secondItem="ADK-Ew-Eyl" secondAttribute="centerX" id="tnU-MV-QCy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="-69"/>
+        </scene>
+    </scenes>
+</document>

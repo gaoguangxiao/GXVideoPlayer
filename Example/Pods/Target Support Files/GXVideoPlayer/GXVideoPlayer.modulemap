@@ -1,0 +1,6 @@
+framework module GXVideoPlayer {
+  umbrella header "GXVideoPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
