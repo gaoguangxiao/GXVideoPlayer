@@ -1,5 +1,5 @@
 PODS:
-  - GXVideoPlayer (0.1.0):
+  - GXVideoPlayer (0.1.2):
     - Masonry
   - Masonry (1.1.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GXVideoPlayer: 865d86bfc3c61e53fa4d0b0d410d2670b108180c
+  GXVideoPlayer: 6676c19ed8c36e0edf043e6e18a04193bdbe539f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: 695c266d65225fea544db583f44445bfa38a8a9f

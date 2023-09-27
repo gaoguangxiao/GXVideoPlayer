@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "UIViewController+ShouldAutorotate.h"
 #import "FastForwardView.h"
 #import "WMLightView.h"
 #import "WMPlayer.h"
