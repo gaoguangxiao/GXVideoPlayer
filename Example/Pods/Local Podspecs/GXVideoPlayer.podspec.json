@@ -1,9 +1,9 @@
 {
   "name": "GXVideoPlayer",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "基于AVPlay的播放器",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://gitee.com/gtools",
+  "homepage": "https://github.com/gaoguangxiao",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "小修": "gaoguangxiao125@sina.com"
   },
   "source": {
-    "git": "https://gitee.com/gtools/gxvideo-player.git",
-    "tag": "0.1.2"
+    "git": "https://github.com/gaoguangxiao/GXVideoPlayer.git",
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "10.0"

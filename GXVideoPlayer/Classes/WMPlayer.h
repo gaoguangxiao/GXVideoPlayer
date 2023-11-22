@@ -106,6 +106,12 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
  播放器的代理
  */
 @property (nonatomic, weak)id <WMPlayerDelegate> delegate;
+
+/**
+ 是否开启视图交互
+ */
+@property (nonatomic,assign) BOOL  enableViewInteraction;
+
 /**
  是否开启音量手势
  */

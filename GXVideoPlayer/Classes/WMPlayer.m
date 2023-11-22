@@ -449,7 +449,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     self.progressSlider.minimumTrackTintColor = self.tintColor;
     self.bottomProgress.progressTintColor = self.tintColor;
 }
-#pragma mark 
+#pragma mark
 #pragma mark 进入前台
 - (void)appWillEnterForeground:(NSNotification*)note{
         if (self.state==WMPlayerStateFinished) {
@@ -664,6 +664,14 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     _muted = muted;
     self.player.muted = muted;
 }
+- (void)setEnableViewInteraction:(BOOL)enableViewInteraction {
+    _enableViewInteraction = enableViewInteraction;
+
+    self.bottomView.hidden = !enableViewInteraction;
+    self.topView.hidden    = !enableViewInteraction;
+    //取消手势
+}
+
 //设置playerLayer的填充模式
 - (void)setPlayerLayerGravity:(WMPlayerLayerGravity)playerLayerGravity {
     _playerLayerGravity = playerLayerGravity;
@@ -696,7 +704,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     }
 }
 //重写playerModel的setter方法，处理自己的逻辑
--(void)setPlayerModel:(WMPlayerModel *)playerModel{    
+-(void)setPlayerModel:(WMPlayerModel *)playerModel{
     if (_playerModel==playerModel) {
         return;
     }
@@ -771,7 +779,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     if (!mainWindow) {
         mainWindow = UIApplication.sharedApplication.windows.firstObject;
     }
-    if (@available(iOS 11.0, *)) {//x系列的系统从iOS11开始        
+    if (@available(iOS 11.0, *)) {//x系列的系统从iOS11开始
         if(mainWindow.window.safeAreaInsets.bottom > 0.0) {
             iPhoneXSeries = YES;
         }
@@ -1155,7 +1163,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     NSTimeInterval result     = startSeconds + durationSeconds;// 计算缓冲总进度
     return result;
 }
-#pragma mark 
+#pragma mark
 #pragma mark - touches
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     //这个是用来判断, 如果有多个手指点击则不做出响应
@@ -1181,6 +1189,11 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    if (!self.enableViewInteraction) {
+        return;
+    }
+    
     UITouch * touch = (UITouch *)touches.anyObject;
     if (touches.count > 1 || [touch tapCount] > 1  || event.allTouches.count > 1) {
         return;
