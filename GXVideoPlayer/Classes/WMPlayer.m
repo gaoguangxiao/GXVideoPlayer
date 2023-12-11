@@ -145,9 +145,9 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     [[AVAudioSession sharedInstance]setActive: YES error: &activationErr];
     //wmplayer内部的一个view，用来管理子视图
     self.contentView = [UIView new];
-    self.contentView.backgroundColor = [UIColor blackColor];
+//    self.contentView.backgroundColor = [UIColor blackColor];
     [self addSubview:self.contentView];
-    self.backgroundColor = [UIColor blackColor];
+//    self.backgroundColor = [UIColor blackColor];
 
     //创建fastForwardView，快进⏩和快退的view
     self.FF_View = [[FastForwardView alloc] init];

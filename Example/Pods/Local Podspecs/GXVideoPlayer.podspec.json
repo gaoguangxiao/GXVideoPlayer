@@ -1,7 +1,7 @@
 {
   "name": "GXVideoPlayer",
-  "version": "0.1.3",
-  "summary": "基于AVPlay的播放器",
+  "version": "0.1.4",
+  "summary": "移除默认背景颜色",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/GXVideoPlayer.git",
-    "tag": "0.1.3"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "10.0"
