@@ -76,6 +76,8 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
 -(void)wmplayerGotVideoSize:(WMPlayer *)wmplayer videoSize:(CGSize )presentationSize;
 //播放完毕的代理方法
 -(void)wmplayerFinishedPlay:(WMPlayer *)wmplayer;
+//播放轴时间
+- (void)wmplayer:(WMPlayer *)wmplayer updateTime:(long)time;
 @end
 
 

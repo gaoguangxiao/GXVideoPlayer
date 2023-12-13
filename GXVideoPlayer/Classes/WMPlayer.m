@@ -1100,6 +1100,9 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     self.leftTimeLabel.text = [self convertTime:nowTime];
     self.rightTimeLabel.text = [self convertTime:self.totalTime];
     
+    if ([self.delegate respondsToSelector:@selector(wmplayer:updateTime:)]) {
+        [self.delegate wmplayer:self updateTime:nowTime];
+    }
     
     if (isnan(totalTime)) {
         self.rightTimeLabel.text = @"";
