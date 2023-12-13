@@ -1,7 +1,7 @@
 {
   "name": "GXVideoPlayer",
-  "version": "0.1.4",
-  "summary": "移除默认背景颜色",
+  "version": "0.1.5",
+  "summary": "增加视频播放时间回调",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/GXVideoPlayer.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "10.0"

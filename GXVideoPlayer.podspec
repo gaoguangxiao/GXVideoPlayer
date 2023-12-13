@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.1.4'
-  s.summary          = '移除默认背景颜色'
+  s.version          = '0.1.5'
+  s.summary          = '增加视频播放时间回调'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
