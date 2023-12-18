@@ -72,6 +72,8 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
 -(void)wmplayerFailedPlay:(WMPlayer *)wmplayer WMPlayerStatus:(WMPlayerState)state;
 //准备播放的代理方法
 -(void)wmplayerReadyToPlay:(WMPlayer *)wmplayer WMPlayerStatus:(WMPlayerState)state;
+//缓冲准备播放的代理方法
+-(void)wmplayereBufferToPlay:(WMPlayer *)wmplayer WMPlayerStatus:(WMPlayerState)state;
 //播放器已经拿到视频的尺寸大小
 -(void)wmplayerGotVideoSize:(WMPlayer *)wmplayer videoSize:(CGSize )presentationSize;
 //播放完毕的代理方法
