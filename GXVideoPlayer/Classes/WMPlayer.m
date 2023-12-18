@@ -1045,7 +1045,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                 NSLog(@"%s WMPlayerStateBuffering",__FUNCTION__);
                 [self loadedTimeRanges];
             }
-            if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayerReadyToPlay:WMPlayerStatus:)]) {
+            if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayereBufferToPlay:WMPlayerStatus:)]) {
                 [self.delegate wmplayereBufferToPlay:self WMPlayerStatus:WMPlayerStateBuffering];
             }
         }else if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]) {
@@ -1060,7 +1060,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                     self.state = WMPlayerStatePlaying;
                 }
             }
-            if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayerReadyToPlay:WMPlayerStatus:)]) {
+            if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayereBufferToPlay:WMPlayerStatus:)]) {
                 [self.delegate wmplayereBufferToPlay:self WMPlayerStatus:WMPlayerStatePlaying];
             }
         }
