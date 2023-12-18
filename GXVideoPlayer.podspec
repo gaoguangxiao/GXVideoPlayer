@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = '增加视频播放时间回调'
 
 # This description is used to generate tags and improve search results.
