@@ -1091,7 +1091,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 #pragma  mark - 定时器
 -(void)initTimer{
     __weak typeof(self) weakSelf = self;
-    self.playbackTimeObserver =  [self.player addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(1.0, NSEC_PER_SEC)  queue:dispatch_get_main_queue() /* If you pass NULL, the main queue is used. */
+    self.playbackTimeObserver =  [self.player addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(0.1, NSEC_PER_SEC)  queue:dispatch_get_main_queue() /* If you pass NULL, the main queue is used. */
         usingBlock:^(CMTime time){
         [weakSelf syncScrubber];
     }];
@@ -1101,8 +1101,8 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     CMTime playerDuration = [self playerItemDuration];
     CGFloat totalTime = (CGFloat)CMTimeGetSeconds(playerDuration);
 
-   
-    long long nowTime = self.currentItem.currentTime.value/self.currentItem.currentTime.timescale;
+    
+    double nowTime = self.currentTime;
     self.leftTimeLabel.text = [self convertTime:nowTime];
     self.rightTimeLabel.text = [self convertTime:self.totalTime];
     

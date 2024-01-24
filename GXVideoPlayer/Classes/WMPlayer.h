@@ -79,7 +79,7 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
 //播放完毕的代理方法
 -(void)wmplayerFinishedPlay:(WMPlayer *)wmplayer;
 //播放轴时间
-- (void)wmplayer:(WMPlayer *)wmplayer updateTime:(long)time;
+- (void)wmplayer:(WMPlayer *)wmplayer updateTime:(float)time;
 @end
 
 
