@@ -41,6 +41,12 @@ typedef NS_ENUM(NSInteger, BackBtnStyle){
     BackBtnStylePop //pop箭头<-
 };
 
+// 枚举值，包含播放器右上角的跳过按钮的类型
+typedef NS_ENUM(NSInteger, SkipBtnStyle){
+    SkipBtnStyleAlways, //一直显示
+    SkipBtnStyleTimer, //跟随控制栏
+};
+
 //手势操作的类型
 typedef NS_ENUM(NSUInteger,WMControlType) {
     WMControlTypeDefault,//无任何操作
@@ -58,6 +64,8 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
 -(void)wmplayer:(WMPlayer *)wmplayer clickedPlayOrPauseButton:(UIButton *)playOrPauseBtn;
 //点击关闭按钮代理方法
 -(void)wmplayer:(WMPlayer *)wmplayer clickedCloseButton:(UIButton *)backBtn;
+//点击跳过按钮代理方法
+-(void)wmplayer:(WMPlayer *)wmplayer clickedSkipButton:(UIButton *)backBtn;
 //点击全屏按钮代理方法
 -(void)wmplayer:(WMPlayer *)wmplayer clickedFullScreenButton:(UIButton *)fullScreenBtn;
 //点击锁定🔒按钮的方法
@@ -92,6 +100,12 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
  返回按钮的样式
  */
 @property (nonatomic, assign) BackBtnStyle backBtnStyle;
+
+/**
+ 跳过按钮的显示逻辑
+ */
+//@property (nonatomic, assign) SkipBtnStyle skipBtnStyle;
+
 /**
  BOOL值判断当前的状态，开发者要自己维护次BOOL值
  */
@@ -137,6 +151,8 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
  */
 @property (nonatomic,assign) BOOL  loopPlay;
 
+/// 是否能够跳过视频播放
+@property (nonatomic, assign) BOOL enableSkipVideo;
 
 /**
  设置playerLayer的填充模式

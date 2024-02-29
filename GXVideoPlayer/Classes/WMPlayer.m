@@ -73,7 +73,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 //显示播放时间的UILabel+加载失败的UILabel+播放视频的title
 @property (nonatomic,strong) UILabel   *leftTimeLabel,*rightTimeLabel,*titleLabel,*loadFailedLabel;
 //控制全屏和播放暂停按钮
-@property (nonatomic,strong) UIButton  *fullScreenBtn,*playOrPauseBtn,*lockBtn,*backBtn,*rateBtn;
+@property (nonatomic,strong) UIButton  *fullScreenBtn,*playOrPauseBtn,*lockBtn,*backBtn,*skipBtn,*rateBtn;
 //进度滑块&声音滑块
 @property (nonatomic,strong) UISlider   *progressSlider,*volumeSlider;
 //显示缓冲进度和底部的播放进度
@@ -158,6 +158,8 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     //设置默认值
     self.enableVolumeGesture = YES;
     self.enableFastForwardGesture = YES;
+//    self.skipBtnStyle = SkipBtnStyleTimer;
+    self.enableSkipVideo = NO;
     
     //小菊花
     self.loadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
@@ -263,6 +265,15 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     [self.backBtn setImage:WMPlayerImage(@"close.png") forState:UIControlStateSelected];
     [self.backBtn addTarget:self action:@selector(colseTheVideo:) forControlEvents:UIControlEventTouchUpInside];
     [self.topView addSubview:self.backBtn];
+    
+    //skipBtn
+    self.skipBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.skipBtn.showsTouchWhenHighlighted = YES;
+    [self.skipBtn setTitle:@"跳过" forState:UIControlStateNormal];
+    [self.skipBtn setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+    [self.skipBtn addTarget:self action:@selector(skipTheVideo:) forControlEvents:UIControlEventTouchUpInside];
+    self.skipBtn.hidden = YES;
+    [self.contentView addSubview:self.skipBtn];
     
     //rateBtn
     self.rateBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -380,6 +391,15 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
         make.size.mas_equalTo(CGSizeMake(self.backBtn.currentImage.size.width+6, self.backBtn.currentImage.size.height+4));
         make.centerY.equalTo(self.titleLabel);
     }];
+    [self.skipBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.trailing.equalTo(self.topView).offset(-8);
+        make.size.mas_equalTo(CGSizeMake(100, 40));
+        make.centerY.equalTo(self.titleLabel);
+    }];
+    self.skipBtn.layer.borderColor = UIColor.whiteColor.CGColor;
+    self.skipBtn.layer.borderWidth = 0.5;
+    self.skipBtn.layer.cornerRadius = 20;
+    
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.mas_equalTo(self.backBtn.mas_trailing).offset(50);
         make.trailing.equalTo(self.topView).offset(-50);
@@ -516,6 +536,13 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 -(void)colseTheVideo:(UIButton *)sender{
     if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayer:clickedCloseButton:)]) {
         [self.delegate wmplayer:self clickedCloseButton:sender];
+    }
+}
+#pragma mark
+#pragma mark - 跳过按钮点击func
+-(void)skipTheVideo:(UIButton *)sender{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayer:clickedSkipButton:)]) {
+        [self.delegate wmplayer:self clickedSkipButton:sender];
     }
 }
 //获取视频长度
@@ -836,6 +863,14 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
         [self.backBtn setImage:nil forState:UIControlStateSelected];
     }
 }
+
+- (void)setEnableSkipVideo:(BOOL)enableSkipVideo {
+    _enableSkipVideo = enableSkipVideo;
+//    if (_enableSkipVideo) {
+        self.skipBtn.hidden = !enableSkipVideo;
+//    }
+}
+
 -(void)setIsHiddenTopAndBottomView:(BOOL)isHiddenTopAndBottomView{
     _isHiddenTopAndBottomView = isHiddenTopAndBottomView;
     self.prefersStatusBarHidden = isHiddenTopAndBottomView;
