@@ -119,6 +119,9 @@ typedef NS_ENUM(NSUInteger,WMControlType) {
  */
 @property (nonatomic,strong) UIColor *tintColor;
 
+/// 播放器背景颜色 默认透明
+@property (nonatomic, strong) UIColor *contentBackColor;
+
 @property (nonatomic,assign,readonly) BOOL    prefersStatusBarHidden;
 /**
  播放器的代理

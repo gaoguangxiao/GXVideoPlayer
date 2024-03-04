@@ -850,6 +850,13 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
         }
     }
 }
+- (void)setContentBackColor:(UIColor *)contentBackColor {
+    _contentBackColor = contentBackColor;
+    
+    self.contentView.backgroundColor = _contentBackColor;
+    
+}
+
 -(void)setBackBtnStyle:(BackBtnStyle)backBtnStyle{
     _backBtnStyle = backBtnStyle;
     if (backBtnStyle==BackBtnStylePop) {
