@@ -909,37 +909,49 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 #pragma mark
 #pragma mark--播放完成
 - (void)moviePlayDidEnd:(NSNotification *)notification {
-    if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayerFinishedPlay:)]) {
-        [self.delegate wmplayerFinishedPlay:self];
-    }
     
-    if(self.loopPlay){
-        [self.player seekToTime:kCMTimeZero toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {
-            if (finished) {
-                if (self.isLockScreen) {
-                    [self lockAction:self.lockBtn];
-                }else{
-                    [self showControlView];
-                }
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    self.state = WMPlayerStateFinished;
-                    self.bottomProgress.progress = 0;
-                    self.playOrPauseBtn.selected = YES;
-                });
+    if (self.state != WMPlayerStateFinished) {
+        
+        if(self.loopPlay){
+            
+            if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayerFinishedPlay:)]) {
+                [self.delegate wmplayerFinishedPlay:self];
             }
-        }];
+            
+            [self.player seekToTime:kCMTimeZero toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {
+                if (finished) {
+                    if (self.isLockScreen) {
+                        [self lockAction:self.lockBtn];
+                    }else{
+                        [self showControlView];
+                    }
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        self.state = WMPlayerStateFinished;
+                        self.bottomProgress.progress = 0;
+                        self.playOrPauseBtn.selected = YES;
+                    });
+                }
+            }];
 
-    } else {
-        if (self.isLockScreen) {
-            [self lockAction:self.lockBtn];
-        }else{
-            [self showControlView];
+        } else {
+            if (self.isLockScreen) {
+                [self lockAction:self.lockBtn];
+            }else{
+                [self showControlView];
+            }
+            if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayerFinishedPlay:)]) {
+                [self.delegate wmplayerFinishedPlay:self];
+            }
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                self.state = WMPlayerStateFinished;
+                self.bottomProgress.progress = 0;
+                self.playOrPauseBtn.selected = YES;
+            });
         }
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            self.state = WMPlayerStateFinished;
-            self.bottomProgress.progress = 0;
-            self.playOrPauseBtn.selected = YES;
-        });
+    } else {
+        //播放已结束，说明已经处理过结束
+        
     }
     
 //    [self.player seekToTime:kCMTimeZero toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {
