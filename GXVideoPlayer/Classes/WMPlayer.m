@@ -926,7 +926,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                         [self showControlView];
                     }
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                        self.state = WMPlayerStateFinished;
+                        self.state = WMPlayerStatePlaying;
                         self.bottomProgress.progress = 0;
                         self.playOrPauseBtn.selected = YES;
                     });

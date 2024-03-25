@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.2.2'
-  s.summary          = '增加视频播放结束的条件判断'
+  s.version          = '0.2.3'
+  s.summary          = '修复loop循环视频时，视频无法播放问题'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
