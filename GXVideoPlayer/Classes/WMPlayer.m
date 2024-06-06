@@ -138,7 +138,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 }
 
 -(void)initWMPlayer{
-    [UIApplication sharedApplication].idleTimerDisabled=YES;
+//    [UIApplication sharedApplication].idleTimerDisabled=YES;
     NSError *setCategoryErr = nil;
     NSError *activationErr  = nil;
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error: &setCategoryErr];
@@ -1479,7 +1479,7 @@ NSString * calculateTimeWithTimeFormatter(long long timeSecond){
     self.playOrPauseBtn = nil;
     self.playerLayer = nil;
     self.lightView = nil;
-    [UIApplication sharedApplication].idleTimerDisabled=NO;
+//    [UIApplication sharedApplication].idleTimerDisabled=NO;
 }
 
 //获取当前的旋转状态
