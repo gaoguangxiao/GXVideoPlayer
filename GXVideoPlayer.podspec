@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.2.4'
-  s.summary          = '修复长亮关闭'
+  s.version          = '0.2.5'
+  s.summary          = 'feat:耳机拔下中断'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
