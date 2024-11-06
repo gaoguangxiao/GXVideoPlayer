@@ -963,7 +963,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                     }else{
                         [self showControlView];
                     }
-                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    dispatch_async(dispatch_get_main_queue(), ^{
                         self.state = WMPlayerStatePlaying;
                         self.bottomProgress.progress = 0;
                         self.playOrPauseBtn.selected = YES;
@@ -980,8 +980,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
             if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayerFinishedPlay:)]) {
                 [self.delegate wmplayerFinishedPlay:self];
             }
-            
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_async(dispatch_get_main_queue(), ^{
                 self.state = WMPlayerStateFinished;
                 self.bottomProgress.progress = 0;
                 self.playOrPauseBtn.selected = YES;
@@ -1176,14 +1175,12 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
             // 当缓冲好的时候
             if (self.currentItem.playbackLikelyToKeepUp && self.state == WMPlayerStateBuffering){
                 NSLog(@"55555%s WMPlayerStatePlaying",__FUNCTION__);
-                if (self.state==WMPlayerStateStopped||self.state==WMPlayerStatePause) {
-                    
-                }else{
-                    self.state = WMPlayerStatePlaying;
+
+                self.state = WMPlayerStatePlaying;
+                //保证只有缓冲状态填充才有回调
+                if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayereBufferToPlay:WMPlayerStatus:)]) {
+                    [self.delegate wmplayereBufferToPlay:self WMPlayerStatus:WMPlayerStatePlaying];
                 }
-            }
-            if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayereBufferToPlay:WMPlayerStatus:)]) {
-                [self.delegate wmplayereBufferToPlay:self WMPlayerStatus:WMPlayerStatePlaying];
             }
         }
     }
