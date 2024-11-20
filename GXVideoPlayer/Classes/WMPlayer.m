@@ -774,7 +774,8 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     if ([self.player respondsToSelector:@selector(automaticallyWaitsToMinimizeStalling)]) {
         self.player.automaticallyWaitsToMinimizeStalling = YES;
     }
-    self.player.usesExternalPlaybackWhileExternalScreenIsActive=YES;
+    //外部投屏播放默认为NO
+//    self.player.usesExternalPlaybackWhileExternalScreenIsActive=YES;
     //AVPlayerLayer
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
     //WMPlayer视频的默认填充模式，AVLayerVideoGravityResizeAspect
