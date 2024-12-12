@@ -139,10 +139,10 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 
 -(void)initWMPlayer{
     //    [UIApplication sharedApplication].idleTimerDisabled=YES;
-    NSError *setCategoryErr = nil;
-    NSError *activationErr  = nil;
-    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error: &setCategoryErr];
-    [[AVAudioSession sharedInstance]setActive: YES error: &activationErr];
+//    NSError *setCategoryErr = nil;
+//    NSError *activationErr  = nil;
+//    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error: &setCategoryErr];
+//    [[AVAudioSession sharedInstance]setActive: YES error: &activationErr];
     //wmplayer内部的一个view，用来管理子视图
     self.contentView = [UIView new];
     //    self.contentView.backgroundColor = [UIColor blackColor];

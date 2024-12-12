@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.2.7'
-  s.summary          = 'change:修改投屏视频和内容分离'
+  s.version          = '0.2.8'
+  s.summary          = 'change:修改视频会话交由app控制'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
