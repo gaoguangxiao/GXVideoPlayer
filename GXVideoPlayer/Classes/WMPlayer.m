@@ -1124,6 +1124,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                     NSError *error = [self.player.currentItem error];
                     if (error) {
                         self.loadFailedLabel.hidden = NO;
+                        self.loadFailedLabel.text = [NSString stringWithFormat:@"视频加载失败，%@",error.localizedDescription];
                         [self bringSubviewToFront:self.loadFailedLabel];
                         //here
                         [self.loadingView stopAnimating];
