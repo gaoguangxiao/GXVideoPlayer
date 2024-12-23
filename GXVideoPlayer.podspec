@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.2.9'
+  s.version          = '0.3.0'
   s.summary          = 'change:视频会话播放失败描述'
 
 # This description is used to generate tags and improve search results.
@@ -28,8 +28,9 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/gaoguangxiao/GXVideoPlayer.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.0'
+  
   s.source_files = 'GXVideoPlayer/Classes/**/*'
   #s.resources    = 'GXVideoPlayer/Assets/WMPlayer.bundle'
   s.resource_bundles = {
@@ -39,5 +40,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'Masonry'
+  s.dependency 'GXMasonry'
+#  s.dependency 'SnapKit'
 end
