@@ -590,6 +590,10 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
             self.state = WMPlayerStatePlaying;
             self.playOrPauseBtn.selected = NO;
             [self.player play];
+            self.player.rate = _rate;
+            //1、WMPlayer play----timeControlStatus;1【AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate】
+//            缓冲不足：播放器在缓冲区中没有足够的数据时，会进入 WaitingToPlayAtSpecifiedRate 状态。
+            NSLog(@"WMPlayer play----%ld,rate:%f",(long)self.player.timeControlStatus,self.player.rate);
         }else if(self.state ==WMPlayerStateFinished){
             NSLog(@"fffff");
         }
@@ -678,12 +682,11 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
         
         [_currentItem addObserver:self forKeyPath:@"presentationSize" options:NSKeyValueObservingOptionNew context:PlayViewStatusObservationContext];
         
-        
-        
-        
         [self.player replaceCurrentItemWithPlayerItem:_currentItem];
         // 添加视频播放结束通知
         [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(moviePlayDidEnd:) name:AVPlayerItemDidPlayToEndTimeNotification object:_currentItem];
+        [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(moviePlayDidFailedToEnd:) name:AVPlayerItemFailedToPlayToEndTimeNotification object:_currentItem];
+        
     }
 }
 //设置静音
@@ -770,10 +773,14 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     }else{
         self.player.actionAtItemEnd = AVPlayerActionAtItemEndPause;
     }
+    
+    //添加监听
+    [self.player addObserver:self forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
+    
     //ios10新添加的属性，如果播放不了，可以试试打开这个代码
-    if ([self.player respondsToSelector:@selector(automaticallyWaitsToMinimizeStalling)]) {
-        self.player.automaticallyWaitsToMinimizeStalling = YES;
-    }
+//    if ([self.player respondsToSelector:@selector(automaticallyWaitsToMinimizeStalling)]) {
+//        self.player.automaticallyWaitsToMinimizeStalling = YES;
+//    }
     //外部投屏播放默认为NO
 //    self.player.usesExternalPlaybackWhileExternalScreenIsActive=YES;
     //AVPlayerLayer
@@ -946,8 +953,15 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     }
 }
 #pragma mark
+#pragma mark--播放失败
+- (void)moviePlayDidFailedToEnd:(NSNotification *)notification {
+//    NSLog(@"WMPlayer moviePlayDidFailedToEnd");
+}
+
 #pragma mark--播放完成
 - (void)moviePlayDidEnd:(NSNotification *)notification {
+    
+    NSLog(@"WMPlayer moviePlayDidEnd");
     
     if (self.state != WMPlayerStateFinished) {
         
@@ -1113,6 +1127,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                     }else{
                         self.rate = [self.rateBtn.currentTitle floatValue];
                     }
+//                    NSLog(@"WMPlayer ReadyToPlay----dutaion:%f",self.duration);
                 }
                     break;
                     
@@ -1158,6 +1173,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
             NSTimeInterval timeInterval = [self availableDuration];
             CMTime duration             = self.currentItem.duration;
             CGFloat totalDuration       = CMTimeGetSeconds(duration);
+//            NSLog(@"loadedTimeRanges_缓冲进度: %f",timeInterval);
             //缓冲颜色
             self.loadingProgress.progressTintColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:0.7];
             [self.loadingProgress setProgress:timeInterval / totalDuration animated:NO];
@@ -1183,6 +1199,21 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                 if (self.delegate&&[self.delegate respondsToSelector:@selector(wmplayereBufferToPlay:WMPlayerStatus:)]) {
                     [self.delegate wmplayereBufferToPlay:self WMPlayerStatus:WMPlayerStatePlaying];
                 }
+            }
+        }
+    } else {
+        if ([keyPath isEqualToString:@"timeControlStatus"]) {
+            switch (_player.timeControlStatus) {
+                case AVPlayerTimeControlStatusPaused:
+//                    NSLog(@"AVPlayerTimeControlStatusPaused");
+                    break;
+                case AVPlayerTimeControlStatusPlaying:
+//                    NSLog(@"AVPlayerTimeControlStatusPlaying");
+                    break;
+                case AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate:
+//                    NSLog(@"AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate");
+                default:
+                    break;
             }
         }
     }
@@ -1226,6 +1257,8 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     double nowTime = self.currentTime;
     self.leftTimeLabel.text = [self convertTime:nowTime];
     self.rightTimeLabel.text = [self convertTime:self.totalTime];
+    
+//    NSLog(@"nowTime：%.2f",nowTime);
     
     if ([self.delegate respondsToSelector:@selector(wmplayer:updateTime:)]) {
         [self.delegate wmplayer:self updateTime:nowTime];
@@ -1500,6 +1533,7 @@ NSString * calculateTimeWithTimeFormatter(long long timeSecond){
     [self.player.currentItem.asset cancelLoading];
     [self.player pause];
     [self.player removeTimeObserver:self.playbackTimeObserver];
+    [self.player removeObserver:self forKeyPath:@"timeControlStatus"];
     
     //移除观察者
     [_currentItem removeObserver:self forKeyPath:@"status"];
@@ -1512,6 +1546,7 @@ NSString * calculateTimeWithTimeFormatter(long long timeSecond){
     
     [self.playerLayer removeFromSuperlayer];
     [self.player replaceCurrentItemWithPlayerItem:nil];
+    
     self.player = nil;
     self.playOrPauseBtn = nil;
     self.playerLayer = nil;
