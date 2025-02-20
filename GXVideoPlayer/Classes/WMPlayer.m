@@ -397,7 +397,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
         make.centerY.equalTo(self.titleLabel);
     }];
     self.skipBtn.layer.borderColor = UIColor.whiteColor.CGColor;
-    self.skipBtn.layer.borderWidth = 0.5;
+    self.skipBtn.layer.borderWidth = 1.0;
     self.skipBtn.layer.cornerRadius = 20;
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.3.1'
-  s.summary          = 'change:解决播放器剩余不超过1秒，调用play，播放器没有结束回调的情况'
+  s.version          = '0.3.2'
+  s.summary          = 'change:跳过按钮边框宽度为1.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
