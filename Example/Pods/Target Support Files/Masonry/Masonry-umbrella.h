@@ -26,6 +26,6 @@
 #import "View+MASShorthandAdditions.h"
 #import "ViewController+MASAdditions.h"
 
-FOUNDATION_EXPORT double GXMasonryVersionNumber;
-FOUNDATION_EXPORT const unsigned char GXMasonryVersionString[];
+FOUNDATION_EXPORT double MasonryVersionNumber;
+FOUNDATION_EXPORT const unsigned char MasonryVersionString[];
 

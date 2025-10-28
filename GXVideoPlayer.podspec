@@ -1,15 +1,7 @@
-#
-# Be sure to run `pod lib lint GXVideoPlayer.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.3.2'
-  s.summary          = 'change:跳过按钮边框宽度为1.0'
+  s.version          = '0.3.3'
+  s.summary          = 'change:依赖`Masonry`'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -40,6 +32,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'GXMasonry'
+  s.dependency 'Masonry'
 #  s.dependency 'SnapKit'
 end
