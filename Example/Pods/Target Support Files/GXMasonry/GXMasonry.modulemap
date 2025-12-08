@@ -1,0 +1,6 @@
+framework module GXMasonry {
+  umbrella header "GXMasonry-umbrella.h"
+
+  export *
+  module * { export * }
+}

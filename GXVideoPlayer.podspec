@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.3.3'
-  s.summary          = 'change:依赖`Masonry`'
+  s.version          = '0.3.5'
+  s.summary          = 'change:更新masn'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,6 +32,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'Masonry'
+  s.dependency 'GXMasonry'
 #  s.dependency 'SnapKit'
 end

@@ -7,7 +7,7 @@
 //
 
 #import "FastForwardView.h"
-#import "Masonry.h"
+#import "GXMasonry/Masonry.h"
 
 @implementation FastForwardView
 - (instancetype)init{

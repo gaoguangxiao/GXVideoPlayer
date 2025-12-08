@@ -7,251 +7,199 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09397B41D59B46E7D178DD24FB0572E1 /* Pods-GXVideoPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CACE44618DFE303D8A4834AF009F6 /* Pods-GXVideoPlayer_Example-dummy.m */; };
-		0BF6777674BD96051E0FEF15C787E7F6 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E8A916CBF07051B4A59F7C721B9C4B2 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		148E9B3E36A51CE73E769292E5F37F6D /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */; };
-		1BD6CFBAE09FA440FE675DF354C71B23 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CEC966A1907AB26B1C7623E1FB98A92 /* WMPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 840F0E9317120F557DDAEA1E74F3F21C /* WMPlayerModel.m */; };
-		1D9BBA5D14B79BFF36C739CDBBCC1BC8 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2436242F7142EE47AB7B136A35878206 /* WMLightView.h in Headers */ = {isa = PBXBuildFile; fileRef = 36AE604254E9DE670646816B2CFE9A90 /* WMLightView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		26B3AD9E06284F175D25A47A25411DCD /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A6434BA759DA0DA5D9C063903F85E83 /* GXVideoPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 210CE5A841090225196C9896B52EAB53 /* GXVideoPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		377BAE1B22C8BEF2693AA46AFCBD8717 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B9D0E1A83BD05743B2455ED3DF660EB /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D2F738EE3F1D8080DC05940FD1862B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
-		3F25636BF04ECD6880F313F1253F88F2 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */; };
-		454910D072E1694E4C1C898DFDB471E6 /* Pods-GXVideoPlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD5351BE083FBE187EAF39CC2ABA1CB /* Pods-GXVideoPlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46A44B9295E22EE53F54F17FC287D9EB /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D4F8801A474E2AF35E40248628D3B2C /* GXVideoPlayer-GXVideoPlayer in Resources */ = {isa = PBXBuildFile; fileRef = 830F4B83589316A8B792738F1FB5903C /* GXVideoPlayer-GXVideoPlayer */; };
-		4FDC42CDF531F7874E73426C16EBA31E /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		596ACD3B751E69EAF75DDE7DB14DFCE6 /* WMLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = A067DCE67FE6280FBD5C6CB22D1861E8 /* WMLightView.m */; };
-		5DE65CAF7FF4D64F1DBC6F02C6BCFA75 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		60FB95A1EB77A55D52BBFF725D47AEBD /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */; };
-		6CACEB3578332A2DF505A91F4A650EF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */; };
-		6E9730FD00BC4C25ECC33E8F17BDF5DE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		7A57243AACE603C8E32D0DE303C3E9C0 /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A748A0D0053777CFFAE64CF6387D17A /* WMPlayer.m */; };
-		837E30F4C8B389DA9E8EDA4C7977F098 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */; };
-		8602D528619EF5646570E63EDBE961C4 /* WMPlayerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BC8ECBEA79E842A017C546ED1F2F8A /* WMPlayerModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		895689E41A093F833C394F0F9A23686A /* FastForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3179A47EB418DF66181381BA2E434F36 /* FastForwardView.m */; };
-		95ED1354EF402001AAD7CD7545DCDC21 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A32553A7065F1683C82DF4235D2D2427 /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DE08F58B2A5155E71AD8C6A7A4031E2 /* WMPlayer.bundle */; };
-		B3CBF38A0FC58D84807434917A345416 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA05136435183D72AC0AC1DB36775CE9 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */; };
-		C21D6A8B08684C6D50D4778BD4D7612E /* GXVideoPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3EBA33ADA25FEF4D96C010905A05FE /* GXVideoPlayer-dummy.m */; };
-		C42CE0AB1ECEEABFA6629E8AC06C3C27 /* WMPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DD568F175DD3F46930BD986DA1721C82 /* WMPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5B3498F1E8781BB47E6E1280D63A593 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5E7B23DCA9BE77FDF84FD78DCEE8B89 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */; };
-		C8E1CBF7C5D3D8C4E5D8C4F5796E9995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
-		CC73DD6D8CC4A2747E2849D2C51DB1DB /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */; };
-		CC77BA4864B5CB23A4B27F15CE689030 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */; };
-		D2E6472837B4E3788B05F0AA1A1A53C9 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */; };
-		DA89DD9A6FD1672929B5911138911814 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */; };
-		E2E55C95BEE6F258A6D2872729D2D0BC /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */; };
-		E869CDB75C2A7537A36C5A793F4F6458 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAC3286E1378E44F12BEE32C567A5F4E /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC5603D968AC086938CDEDC9EB2B97EE /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EEAC82ECFC68D393EE2E4695EB5B3EFF /* FastForwardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 052FB64A7449B7E18BD57655D68498C9 /* FastForwardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00EC96A99AC01F65753C136210BC23A7 /* WMPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 840F0E9317120F557DDAEA1E74F3F21C /* WMPlayerModel.m */; };
+		0BFF180167225FDE009A623CF7E9D91A /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A748A0D0053777CFFAE64CF6387D17A /* WMPlayer.m */; };
+		13F32BF66CD7D2AA11DAD8FE6BA09A46 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 684BA2C7E6DE82CD0717729D64D52615 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BE185A08D91AAC2C5FAECE0D01D643F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5294AE8FDED48992C17025C05EC48FB3 /* MASCompositeConstraint.m */; };
+		2AA8CF15AFBD5223FDBA5411A6B14F8F /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 90051D4E769A9FAC559AA3942A09E718 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BEEE0D17907F2DC20036B898A918A48 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = B9145CA997DB9D00D30102BC5BD49F12 /* MASViewAttribute.m */; };
+		2DCF986C58FFD95BBCEF9D7C70427C8B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 48214A0E5FE774B0A0DD62B61FFFD1CE /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		329C04E20E1FD1CD3F75ADBD08AAF001 /* GXVideoPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 210CE5A841090225196C9896B52EAB53 /* GXVideoPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35811B7B12A155FFD9A335EA9C987856 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = E8FCB68F079CF2EF2A19BC239E1A76AE /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37ADF450101577DC2AC3E6F8A16AF6C9 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A9AA93A04851A2B1A1C16D83C13050 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EE4F7EE89C80BC1AA270F0379A96CCD /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE31610EC73A59BAB42E5D57DEB7D77 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		435ADB7C4F1156B3BAF09FCBA01EF435 /* WMLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = A067DCE67FE6280FBD5C6CB22D1861E8 /* WMLightView.m */; };
+		46A1956AA7E3C0510F3EEDFFB0E44478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		4731440CBFB0AF6EC465A604D3CB863A /* WMPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = DD568F175DD3F46930BD986DA1721C82 /* WMPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AD60F4A2FED7D3818684C3D56060340 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 231C452705C6AFFFC67ABA1F03B0B36D /* MASConstraintMaker.m */; };
+		4B54CF8871F381A1C537C71C9434464D /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 863DD0C91524B30006D667D9B2FDE9CD /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FCB44FA7219E201955085D9C8CDD884 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E862151F5757346B9761EEE32F63ACD /* MASViewConstraint.m */; };
+		503A75920BC3EE5B2D040162AE385ED3 /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9DE08F58B2A5155E71AD8C6A7A4031E2 /* WMPlayer.bundle */; };
+		529377C423905C833719D8CEC6FA2426 /* GXVideoPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3EBA33ADA25FEF4D96C010905A05FE /* GXVideoPlayer-dummy.m */; };
+		52EEA9E1D44E4856634E8E78DA057125 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0080FECEF455B613DFB1E147B4D7F2CF /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5351ED9B0A6023EE37D0F52138F8987C /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4303F1AC69E7FE7F64C256A1B83AE168 /* NSArray+MASAdditions.m */; };
+		5B22CADE16942AAFF0C10182E5C0CB23 /* FastForwardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 052FB64A7449B7E18BD57655D68498C9 /* FastForwardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E0DB83602F89DC24B80C3E83866E0CA /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F62B1C58B2DF8A69C1BE4D060B0A8DFC /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EDD9DCE10811797F2D4CB5FB7CB644A /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FF922C43416EF046E1C33827FECB4B /* ViewController+MASAdditions.m */; };
+		6272ADD50BCBFC17987D98035AC6EBB8 /* GXMasonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 307111E627B201F4D532662DE90B46B4 /* GXMasonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66FFABC05E30E6590FF5FA7530614171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		67AE3946BB6ADF4DACFBE8CB2311489B /* GXMasonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C0F57AA444337D38312877D6D9FD7E /* GXMasonry-dummy.m */; };
+		6E910156557F4581AC3EFBB98961D5C1 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C78872FFDAC09F560301D7078ACAA5 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E82AEF881FF35AD076E277690BEE6F /* Pods-GXVideoPlayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCD5351BE083FBE187EAF39CC2ABA1CB /* Pods-GXVideoPlayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		788B01BEFE08CADFE8491C1FB07F0FC5 /* WMLightView.h in Headers */ = {isa = PBXBuildFile; fileRef = 36AE604254E9DE670646816B2CFE9A90 /* WMLightView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81C7299C5F7AEFDA8F76677C9CDA6AB3 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BF058A975B5B02A09BA714972C802E7 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86D7FA1A637975FE4202559460A8D28B /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 225AF6AE840E9A23CC61F1A4A16C96E2 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A4B2A297ADEF2D4F677363F6043970F /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A7FA61249E3A7F81B2F40AE895FD06 /* MASConstraint.m */; };
+		8E495F877947C9F633E29EFB593A58BA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E52F7936BAD379301BB96CCBD7476D /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		8F3D95B1E89AFB1F73B8EFABFAA57D74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		A340DB82E047CE2138CF827EE0A1DB50 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D09D56EFD27FAE04B551958F06EA6F8C /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A563FEF541EE6706A7AC8B3B30ACC273 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D00903C5F5096C15305F96395CCB69 /* ReplaceMe.m */; };
+		B0E8B0AC96A3CED515E651E20EDA56CB /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B136173F8F8F8B0645F642E163B87B57 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBA60C7863EFABDD320929D28D8A7E33 /* WMPlayerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 35BC8ECBEA79E842A017C546ED1F2F8A /* WMPlayerModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE720B0B94D4865FF64FDDFFA621E4A6 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E8BB6BE69AE9B6DA23BBF4A45523B9 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2EE66F9ECFE3A9A79E5179D1D66C6F /* FastForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3179A47EB418DF66181381BA2E434F36 /* FastForwardView.m */; };
+		C0FF7D56124C50BABD9FA00D29C0B932 /* Pods-GXVideoPlayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CACE44618DFE303D8A4834AF009F6 /* Pods-GXVideoPlayer_Example-dummy.m */; };
+		F26B60B55161A47DB5194AD1EF2828E3 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F95895DDFDE1C514FA4097D8BA80C9E2 /* MASLayoutConstraint.m */; };
+		F5F2D20D48081B7CF4BC23CBA471F749 /* GXVideoPlayer-GXVideoPlayer in Resources */ = {isa = PBXBuildFile; fileRef = 830F4B83589316A8B792738F1FB5903C /* GXVideoPlayer-GXVideoPlayer */; };
+		F698599C368BC3901F62B00B0F5639D1 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A84D5D870D33FAC74205050D7DDB2528 /* View+MASAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		42010A6739F05C3AE48815E3C0D5A9E2 /* PBXContainerItemProxy */ = {
+		054A34D0621B9C1F44B55B14C0439A21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4E2D0228FD3894F9E8E687C1E2543251;
-			remoteInfo = "GXVideoPlayer-GXVideoPlayer";
+			remoteGlobalIDString = 4CFBC77216475EE5B36C1F22DCEB7953;
+			remoteInfo = GXMasonry;
 		};
-		5990E18E4113042A8DD306647906B5A6 /* PBXContainerItemProxy */ = {
+		1FA00ADDF21E8853B6D0D909F844DECE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
+			remoteGlobalIDString = 4CFBC77216475EE5B36C1F22DCEB7953;
+			remoteInfo = GXMasonry;
 		};
-		FDFA5D76E5193C953DD4C47E5C77EB2E /* PBXContainerItemProxy */ = {
+		B0F9369DCD8F49AC67A170C071310293 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D2ACB695137DE1DB8A991029DED8924;
 			remoteInfo = GXVideoPlayer;
 		};
-		FFC817A004173B7792F43B309815C7C2 /* PBXContainerItemProxy */ = {
+		C50A9C3C8C7D6F87CA850434BBF6579E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
+			remoteGlobalIDString = 4E2D0228FD3894F9E8E687C1E2543251;
+			remoteInfo = "GXVideoPlayer-GXVideoPlayer";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0080FECEF455B613DFB1E147B4D7F2CF /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "GXMasonry/Classes/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		02A66284059D4F49C2E7026E4923E9F2 /* Pods-GXVideoPlayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GXVideoPlayer_Example-frameworks.sh"; sourceTree = "<group>"; };
-		02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		052FB64A7449B7E18BD57655D68498C9 /* FastForwardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FastForwardView.h; path = GXVideoPlayer/Classes/FastForwardView.h; sourceTree = "<group>"; };
-		071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		0C131A0763DAE34A8003178936FC10D2 /* GXMasonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GXMasonry; path = GXMasonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3EBA33ADA25FEF4D96C010905A05FE /* GXVideoPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GXVideoPlayer-dummy.m"; sourceTree = "<group>"; };
+		1BF058A975B5B02A09BA714972C802E7 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = GXMasonry/Classes/MASUtilities.h; sourceTree = "<group>"; };
 		1F3AEA7466A1BA86FE1C448FEE6AAC4F /* Pods-GXVideoPlayer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GXVideoPlayer_Example.modulemap"; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		210691BCFE1C9A23C52A06145EBCF703 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		210CE5A841090225196C9896B52EAB53 /* GXVideoPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GXVideoPlayer-umbrella.h"; sourceTree = "<group>"; };
+		225AF6AE840E9A23CC61F1A4A16C96E2 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = GXMasonry/Classes/MASViewAttribute.h; sourceTree = "<group>"; };
+		231C452705C6AFFFC67ABA1F03B0B36D /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = GXMasonry/Classes/MASConstraintMaker.m; sourceTree = "<group>"; };
 		24182BC8F09D59CBD011BB6659A1D998 /* Pods-GXVideoPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GXVideoPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		2A748A0D0053777CFFAE64CF6387D17A /* WMPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMPlayer.m; path = GXVideoPlayer/Classes/WMPlayer.m; sourceTree = "<group>"; };
 		2AD0411A6E1C943F1AFD6552A9E8613E /* GXVideoPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GXVideoPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		2F5DA7EB865AE411BFA0F47E63C4E455 /* GXMasonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GXMasonry.release.xcconfig; sourceTree = "<group>"; };
+		307111E627B201F4D532662DE90B46B4 /* GXMasonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GXMasonry-umbrella.h"; sourceTree = "<group>"; };
 		3179A47EB418DF66181381BA2E434F36 /* FastForwardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FastForwardView.m; path = GXVideoPlayer/Classes/FastForwardView.m; sourceTree = "<group>"; };
-		342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		35BC8ECBEA79E842A017C546ED1F2F8A /* WMPlayerModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMPlayerModel.h; path = GXVideoPlayer/Classes/WMPlayerModel.h; sourceTree = "<group>"; };
 		36AE604254E9DE670646816B2CFE9A90 /* WMLightView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMLightView.h; path = GXVideoPlayer/Classes/WMLightView.h; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3ACF91734F90C7B8DD45612C708389F6 /* GXVideoPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GXVideoPlayer-Info.plist"; sourceTree = "<group>"; };
-		3E537C1F47DA8B06DA4A71E3D14F4DE4 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
-		419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
-		470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		3E862151F5757346B9761EEE32F63ACD /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = GXMasonry/Classes/MASViewConstraint.m; sourceTree = "<group>"; };
+		4303F1AC69E7FE7F64C256A1B83AE168 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "GXMasonry/Classes/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		46FF922C43416EF046E1C33827FECB4B /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "GXMasonry/Classes/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		48214A0E5FE774B0A0DD62B61FFFD1CE /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "GXMasonry/Classes/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		4DC7225715F2837D4EF4AC39F1D17740 /* ResourceBundle-GXVideoPlayer-GXVideoPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GXVideoPlayer-GXVideoPlayer-Info.plist"; sourceTree = "<group>"; };
+		4FA53DFCE9E5BD0319B535897B5DA807 /* GXMasonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GXMasonry-Info.plist"; sourceTree = "<group>"; };
+		5294AE8FDED48992C17025C05EC48FB3 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = GXMasonry/Classes/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		54606C8F4EAE23CE41EA752AEAF8C905 /* GXVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GXVideoPlayer.release.xcconfig; sourceTree = "<group>"; };
-		55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		5766E68E41CA795193A126CA9C70B257 /* Pods-GXVideoPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GXVideoPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		65F5D729AB6A711499FB7BFB9A462B8C /* Pods-GXVideoPlayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GXVideoPlayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
-		6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		684BA2C7E6DE82CD0717729D64D52615 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "GXMasonry/Classes/View+MASAdditions.h"; sourceTree = "<group>"; };
+		69E8BB6BE69AE9B6DA23BBF4A45523B9 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "GXMasonry/Classes/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		756B735376C9CBF243213B9A95DC6B42 /* GXMasonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GXMasonry-prefix.pch"; sourceTree = "<group>"; };
+		77A9AA93A04851A2B1A1C16D83C13050 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "GXMasonry/Classes/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		807C1E18F2C1B0C6B528F5F3966849FA /* Pods-GXVideoPlayer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GXVideoPlayer_Example-Info.plist"; sourceTree = "<group>"; };
-		8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		830F4B83589316A8B792738F1FB5903C /* GXVideoPlayer-GXVideoPlayer */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "GXVideoPlayer-GXVideoPlayer"; path = GXVideoPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		840F0E9317120F557DDAEA1E74F3F21C /* WMPlayerModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMPlayerModel.m; path = GXVideoPlayer/Classes/WMPlayerModel.m; sourceTree = "<group>"; };
-		86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		863DD0C91524B30006D667D9B2FDE9CD /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = GXMasonry/Classes/MASConstraintMaker.h; sourceTree = "<group>"; };
+		88C0F57AA444337D38312877D6D9FD7E /* GXMasonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GXMasonry-dummy.m"; sourceTree = "<group>"; };
+		90051D4E769A9FAC559AA3942A09E718 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = GXMasonry/Classes/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		943CD7298A288E392630C328B63F1357 /* GXMasonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GXMasonry.modulemap; sourceTree = "<group>"; };
 		9B84E2E05F2B7EF7135B5C67FAC2CE2A /* GXVideoPlayer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GXVideoPlayer; path = GXVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE08F58B2A5155E71AD8C6A7A4031E2 /* WMPlayer.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WMPlayer.bundle; path = GXVideoPlayer/Assets/WMPlayer.bundle; sourceTree = "<group>"; };
 		A067DCE67FE6280FBD5C6CB22D1861E8 /* WMLightView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WMLightView.m; path = GXVideoPlayer/Classes/WMLightView.m; sourceTree = "<group>"; };
+		A1626A9161E2DD2BEA383BD493754F9C /* GXMasonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GXMasonry.debug.xcconfig; sourceTree = "<group>"; };
 		A26CACE44618DFE303D8A4834AF009F6 /* Pods-GXVideoPlayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GXVideoPlayer_Example-dummy.m"; sourceTree = "<group>"; };
-		A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		A84D5D870D33FAC74205050D7DDB2528 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "GXMasonry/Classes/View+MASAdditions.m"; sourceTree = "<group>"; };
+		B136173F8F8F8B0645F642E163B87B57 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = GXMasonry/Classes/MASConstraint.h; sourceTree = "<group>"; };
 		B73A19B941891A64AABD4BDD4FC1FAC2 /* GXVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GXVideoPlayer.debug.xcconfig; sourceTree = "<group>"; };
-		BDB676D9D5D3AFD89D8DDCE3369D4BAC /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		B9145CA997DB9D00D30102BC5BD49F12 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = GXMasonry/Classes/MASViewAttribute.m; sourceTree = "<group>"; };
+		C8D00903C5F5096C15305F96395CCB69 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = GXMasonry/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		CCD5351BE083FBE187EAF39CC2ABA1CB /* Pods-GXVideoPlayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GXVideoPlayer_Example-umbrella.h"; sourceTree = "<group>"; };
-		D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		D09D56EFD27FAE04B551958F06EA6F8C /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "GXMasonry/Classes/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		DAE31610EC73A59BAB42E5D57DEB7D77 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = GXMasonry/Classes/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		DD568F175DD3F46930BD986DA1721C82 /* WMPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WMPlayer.h; path = GXVideoPlayer/Classes/WMPlayer.h; sourceTree = "<group>"; };
-		DFA1012B6A8BD076CD9F09831AE37A01 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		E3C78872FFDAC09F560301D7078ACAA5 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = GXMasonry/Classes/MASViewConstraint.h; sourceTree = "<group>"; };
 		E47A692ECA0E98AC547B264EFDA24844 /* Pods-GXVideoPlayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GXVideoPlayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E6A7FA61249E3A7F81B2F40AE895FD06 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = GXMasonry/Classes/MASConstraint.m; sourceTree = "<group>"; };
+		E8FCB68F079CF2EF2A19BC239E1A76AE /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = GXMasonry/Classes/Masonry.h; sourceTree = "<group>"; };
 		E91B491C2661F9565F911332780816AD /* GXVideoPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GXVideoPlayer-prefix.pch"; sourceTree = "<group>"; };
-		EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		ED21B07B26A1D70957F94794A6089D6A /* GXVideoPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GXVideoPlayer.modulemap; sourceTree = "<group>"; };
 		ED4A1E567702F220623C19DE14B0DB59 /* Pods-GXVideoPlayer_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GXVideoPlayer_Example"; path = Pods_GXVideoPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		F4E52F7936BAD379301BB96CCBD7476D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "GXMasonry/Classes/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		F62B1C58B2DF8A69C1BE4D060B0A8DFC /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "GXMasonry/Classes/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		F90619F5C11BA94090822A3C7D8EDBBF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F95895DDFDE1C514FA4097D8BA80C9E2 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = GXMasonry/Classes/MASLayoutConstraint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23291CEFB520ACEF3E17FB97A6D8584F /* Frameworks */ = {
+		4195849161AED16B2AF76034160A7993 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A1956AA7E3C0510F3EEDFFB0E44478 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3044B9A136BE1A63F5E3337E82D8F32F /* Frameworks */ = {
+		5D31BF263C77F931815AF3550026E783 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2F738EE3F1D8080DC05940FD1862B7 /* Foundation.framework in Frameworks */,
+				66FFABC05E30E6590FF5FA7530614171 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F87B6C5CA7BD65A050ED62477435F4A /* Frameworks */ = {
+		A3AF57DA464C0A14F98463590376A215 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8E1CBF7C5D3D8C4E5D8C4F5796E9995 /* Foundation.framework in Frameworks */,
-				6CACEB3578332A2DF505A91F4A650EF2 /* UIKit.framework in Frameworks */,
+				8F3D95B1E89AFB1F73B8EFABFAA57D74 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4CC6708C5CD71201022AEDA60AFF651 /* Frameworks */ = {
+		B8FA824E7F6B5809EFAA565F9EEB55C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC77BA4864B5CB23A4B27F15CE689030 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CCC0CD98AB951949302B433AFE762AD /* Masonry */ = {
+		00331D9AA2CBC0C8A00EBCD9F6A38335 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */,
-				EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */,
-				02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */,
-				9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */,
-				837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */,
-				B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */,
-				470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */,
-				6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */,
-				6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */,
-				EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */,
-				607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */,
-				A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */,
-				A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */,
-				D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */,
-				72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */,
-				30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */,
-				8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */,
-				27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */,
-				E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */,
-				047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */,
-				AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */,
-				86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */,
-				55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */,
-				342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */,
-				C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */,
-			);
-			name = Masonry;
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		0EBC44856566226892C6AD99549A8963 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				0C131A0763DAE34A8003178936FC10D2 /* GXMasonry */,
 				9B84E2E05F2B7EF7135B5C67FAC2CE2A /* GXVideoPlayer */,
 				830F4B83589316A8B792738F1FB5903C /* GXVideoPlayer-GXVideoPlayer */,
-				1FFED36A657123030ABB700256D73F15 /* Masonry */,
 				ED4A1E567702F220623C19DE14B0DB59 /* Pods-GXVideoPlayer_Example */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1DE6440B6853131A80C53DDA34375AAB /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1DE6440B6853131A80C53DDA34375AAB /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				8193349D819536E58C58A34C1B7DF545 /* Foundation.framework */,
-				ECF4CA3AF5536D14B4E015504E7AEEC0 /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		208162E54307B40FB6410C4DB925BF20 /* Pods-GXVideoPlayer_Example */ = {
@@ -271,6 +219,14 @@
 			path = "Target Support Files/Pods-GXVideoPlayer_Example";
 			sourceTree = "<group>";
 		};
+		2BF68BC3629BD735DA92E0AC133FA5F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7BB6E6991853CA9F069B8CEA1E2B95E /* GXMasonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4AB7B67073A52A943630D625F9D14B21 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,27 +237,19 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
+		A9276E7655AF1F9F91C9B4376E977AA6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0CCC0CD98AB951949302B433AFE762AD /* Masonry */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3E537C1F47DA8B06DA4A71E3D14F4DE4 /* Masonry.modulemap */,
-				A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */,
-				DFA1012B6A8BD076CD9F09831AE37A01 /* Masonry-Info.plist */,
-				BDB676D9D5D3AFD89D8DDCE3369D4BAC /* Masonry-prefix.pch */,
-				6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */,
-				F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */,
-				419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */,
+				943CD7298A288E392630C328B63F1357 /* GXMasonry.modulemap */,
+				88C0F57AA444337D38312877D6D9FD7E /* GXMasonry-dummy.m */,
+				4FA53DFCE9E5BD0319B535897B5DA807 /* GXMasonry-Info.plist */,
+				756B735376C9CBF243213B9A95DC6B42 /* GXMasonry-prefix.pch */,
+				307111E627B201F4D532662DE90B46B4 /* GXMasonry-umbrella.h */,
+				A1626A9161E2DD2BEA383BD493754F9C /* GXMasonry.debug.xcconfig */,
+				2F5DA7EB865AE411BFA0F47E63C4E455 /* GXMasonry.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Masonry";
+			path = "../Target Support Files/GXMasonry";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -309,11 +257,54 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				FE3CC688F2F86AD7A4CF0FA37D88ABC4 /* Development Pods */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
-				0EBC44856566226892C6AD99549A8963 /* Products */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2BF68BC3629BD735DA92E0AC133FA5F1 /* Pods */,
+				00331D9AA2CBC0C8A00EBCD9F6A38335 /* Products */,
 				DBC23F73BB82D120036FFFA2D763FFCE /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7BB6E6991853CA9F069B8CEA1E2B95E /* GXMasonry */ = {
+			isa = PBXGroup;
+			children = (
+				90051D4E769A9FAC559AA3942A09E718 /* MASCompositeConstraint.h */,
+				5294AE8FDED48992C17025C05EC48FB3 /* MASCompositeConstraint.m */,
+				B136173F8F8F8B0645F642E163B87B57 /* MASConstraint.h */,
+				E6A7FA61249E3A7F81B2F40AE895FD06 /* MASConstraint.m */,
+				48214A0E5FE774B0A0DD62B61FFFD1CE /* MASConstraint+Private.h */,
+				863DD0C91524B30006D667D9B2FDE9CD /* MASConstraintMaker.h */,
+				231C452705C6AFFFC67ABA1F03B0B36D /* MASConstraintMaker.m */,
+				DAE31610EC73A59BAB42E5D57DEB7D77 /* MASLayoutConstraint.h */,
+				F95895DDFDE1C514FA4097D8BA80C9E2 /* MASLayoutConstraint.m */,
+				E8FCB68F079CF2EF2A19BC239E1A76AE /* Masonry.h */,
+				1BF058A975B5B02A09BA714972C802E7 /* MASUtilities.h */,
+				225AF6AE840E9A23CC61F1A4A16C96E2 /* MASViewAttribute.h */,
+				B9145CA997DB9D00D30102BC5BD49F12 /* MASViewAttribute.m */,
+				E3C78872FFDAC09F560301D7078ACAA5 /* MASViewConstraint.h */,
+				3E862151F5757346B9761EEE32F63ACD /* MASViewConstraint.m */,
+				F62B1C58B2DF8A69C1BE4D060B0A8DFC /* NSArray+MASAdditions.h */,
+				4303F1AC69E7FE7F64C256A1B83AE168 /* NSArray+MASAdditions.m */,
+				0080FECEF455B613DFB1E147B4D7F2CF /* NSArray+MASShorthandAdditions.h */,
+				D09D56EFD27FAE04B551958F06EA6F8C /* NSLayoutConstraint+MASDebugAdditions.h */,
+				F4E52F7936BAD379301BB96CCBD7476D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				C8D00903C5F5096C15305F96395CCB69 /* ReplaceMe.m */,
+				684BA2C7E6DE82CD0717729D64D52615 /* View+MASAdditions.h */,
+				A84D5D870D33FAC74205050D7DDB2528 /* View+MASAdditions.m */,
+				77A9AA93A04851A2B1A1C16D83C13050 /* View+MASShorthandAdditions.h */,
+				69E8BB6BE69AE9B6DA23BBF4A45523B9 /* ViewController+MASAdditions.h */,
+				46FF922C43416EF046E1C33827FECB4B /* ViewController+MASAdditions.m */,
+				A9276E7655AF1F9F91C9B4376E977AA6 /* Support Files */,
+			);
+			name = GXMasonry;
+			path = GXMasonry;
 			sourceTree = "<group>";
 		};
 		DBC23F73BB82D120036FFFA2D763FFCE /* Targets Support Files */ = {
@@ -322,6 +313,14 @@
 				208162E54307B40FB6410C4DB925BF20 /* Pods-GXVideoPlayer_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E5A1075C2B94EC1DD70AB02E8732E680 /* Support Files */ = {
@@ -370,59 +369,77 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2C3D7EBE75359A6AA4E7E7FC0C198197 /* Headers */ = {
+		1120D794465C0F4C7C944089FDB1317E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B3498F1E8781BB47E6E1280D63A593 /* MASCompositeConstraint.h in Headers */,
-				B3CBF38A0FC58D84807434917A345416 /* MASConstraint.h in Headers */,
-				0BF6777674BD96051E0FEF15C787E7F6 /* MASConstraint+Private.h in Headers */,
-				4FDC42CDF531F7874E73426C16EBA31E /* MASConstraintMaker.h in Headers */,
-				1BD6CFBAE09FA440FE675DF354C71B23 /* MASLayoutConstraint.h in Headers */,
-				377BAE1B22C8BEF2693AA46AFCBD8717 /* Masonry.h in Headers */,
-				E869CDB75C2A7537A36C5A793F4F6458 /* Masonry-umbrella.h in Headers */,
-				95ED1354EF402001AAD7CD7545DCDC21 /* MASUtilities.h in Headers */,
-				3B9D0E1A83BD05743B2455ED3DF660EB /* MASViewAttribute.h in Headers */,
-				1D9BBA5D14B79BFF36C739CDBBCC1BC8 /* MASViewConstraint.h in Headers */,
-				5DE65CAF7FF4D64F1DBC6F02C6BCFA75 /* NSArray+MASAdditions.h in Headers */,
-				EC5603D968AC086938CDEDC9EB2B97EE /* NSArray+MASShorthandAdditions.h in Headers */,
-				26B3AD9E06284F175D25A47A25411DCD /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				EAC3286E1378E44F12BEE32C567A5F4E /* View+MASAdditions.h in Headers */,
-				46A44B9295E22EE53F54F17FC287D9EB /* View+MASShorthandAdditions.h in Headers */,
-				0E8A916CBF07051B4A59F7C721B9C4B2 /* ViewController+MASAdditions.h in Headers */,
+				5B22CADE16942AAFF0C10182E5C0CB23 /* FastForwardView.h in Headers */,
+				329C04E20E1FD1CD3F75ADBD08AAF001 /* GXVideoPlayer-umbrella.h in Headers */,
+				788B01BEFE08CADFE8491C1FB07F0FC5 /* WMLightView.h in Headers */,
+				4731440CBFB0AF6EC465A604D3CB863A /* WMPlayer.h in Headers */,
+				BBA60C7863EFABDD320929D28D8A7E33 /* WMPlayerModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B24055AE4583BDEBD411FCC90186B6D /* Headers */ = {
+		237D6E60490D144E213244582302BC9F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEAC82ECFC68D393EE2E4695EB5B3EFF /* FastForwardView.h in Headers */,
-				2A6434BA759DA0DA5D9C063903F85E83 /* GXVideoPlayer-umbrella.h in Headers */,
-				2436242F7142EE47AB7B136A35878206 /* WMLightView.h in Headers */,
-				C42CE0AB1ECEEABFA6629E8AC06C3C27 /* WMPlayer.h in Headers */,
-				8602D528619EF5646570E63EDBE961C4 /* WMPlayerModel.h in Headers */,
+				6272ADD50BCBFC17987D98035AC6EBB8 /* GXMasonry-umbrella.h in Headers */,
+				2AA8CF15AFBD5223FDBA5411A6B14F8F /* MASCompositeConstraint.h in Headers */,
+				B0E8B0AC96A3CED515E651E20EDA56CB /* MASConstraint.h in Headers */,
+				2DCF986C58FFD95BBCEF9D7C70427C8B /* MASConstraint+Private.h in Headers */,
+				4B54CF8871F381A1C537C71C9434464D /* MASConstraintMaker.h in Headers */,
+				3EE4F7EE89C80BC1AA270F0379A96CCD /* MASLayoutConstraint.h in Headers */,
+				35811B7B12A155FFD9A335EA9C987856 /* Masonry.h in Headers */,
+				81C7299C5F7AEFDA8F76677C9CDA6AB3 /* MASUtilities.h in Headers */,
+				86D7FA1A637975FE4202559460A8D28B /* MASViewAttribute.h in Headers */,
+				6E910156557F4581AC3EFBB98961D5C1 /* MASViewConstraint.h in Headers */,
+				5E0DB83602F89DC24B80C3E83866E0CA /* NSArray+MASAdditions.h in Headers */,
+				52EEA9E1D44E4856634E8E78DA057125 /* NSArray+MASShorthandAdditions.h in Headers */,
+				A340DB82E047CE2138CF827EE0A1DB50 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				13F32BF66CD7D2AA11DAD8FE6BA09A46 /* View+MASAdditions.h in Headers */,
+				37ADF450101577DC2AC3E6F8A16AF6C9 /* View+MASShorthandAdditions.h in Headers */,
+				BE720B0B94D4865FF64FDDFFA621E4A6 /* ViewController+MASAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4731116E0F094EE416EB4E878697336 /* Headers */ = {
+		9A3E85DD8FDADE76DD08227FDB1F83A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454910D072E1694E4C1C898DFDB471E6 /* Pods-GXVideoPlayer_Example-umbrella.h in Headers */,
+				77E82AEF881FF35AD076E277690BEE6F /* Pods-GXVideoPlayer_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4CFBC77216475EE5B36C1F22DCEB7953 /* GXMasonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9622991B32B113716E46618D3A845497 /* Build configuration list for PBXNativeTarget "GXMasonry" */;
+			buildPhases = (
+				237D6E60490D144E213244582302BC9F /* Headers */,
+				7AD55E15B255701629BEF493B1039923 /* Sources */,
+				A3AF57DA464C0A14F98463590376A215 /* Frameworks */,
+				CCC1427E9E776A95FA184AE4BAB584F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GXMasonry;
+			productName = GXMasonry;
+			productReference = 0C131A0763DAE34A8003178936FC10D2 /* GXMasonry */;
+			productType = "com.apple.product-type.framework";
+		};
 		4E2D0228FD3894F9E8E687C1E2543251 /* GXVideoPlayer-GXVideoPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B76C9568CB75444D0865C6C8C9DB487 /* Build configuration list for PBXNativeTarget "GXVideoPlayer-GXVideoPlayer" */;
+			buildConfigurationList = 789BD73DA415074E1663F89EB318B038 /* Build configuration list for PBXNativeTarget "GXVideoPlayer-GXVideoPlayer" */;
 			buildPhases = (
-				6E7F0DA2B55550DC4600938619F11B57 /* Sources */,
-				23291CEFB520ACEF3E17FB97A6D8584F /* Frameworks */,
-				EA02EE0DBC0E64AD5B2EBC5A60765C5E /* Resources */,
+				C7DD25EC2B08C3D584375F0614A8709C /* Sources */,
+				B8FA824E7F6B5809EFAA565F9EEB55C9 /* Frameworks */,
+				4D28F290BFE8EFD2B29E2AC4776ABE80 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -433,38 +450,20 @@
 			productReference = 830F4B83589316A8B792738F1FB5903C /* GXVideoPlayer-GXVideoPlayer */;
 			productType = "com.apple.product-type.bundle";
 		};
-		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D87288151F99AC48DDFF5EE528A20C82 /* Build configuration list for PBXNativeTarget "Masonry" */;
-			buildPhases = (
-				2C3D7EBE75359A6AA4E7E7FC0C198197 /* Headers */,
-				166BB1070CCAC8BD94D696D3D7CFF7D5 /* Sources */,
-				3F87B6C5CA7BD65A050ED62477435F4A /* Frameworks */,
-				0DD44CCFDCF1763DB7C9BD9326CABB93 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Masonry;
-			productName = Masonry;
-			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry */;
-			productType = "com.apple.product-type.framework";
-		};
 		63004CF52CCCFB2DFE01235F76FB0109 /* Pods-GXVideoPlayer_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CE7C70CE90D67677D09B9A49D9DF99D /* Build configuration list for PBXNativeTarget "Pods-GXVideoPlayer_Example" */;
+			buildConfigurationList = C5A014F0F09EBCC8444EEFE789554D6B /* Build configuration list for PBXNativeTarget "Pods-GXVideoPlayer_Example" */;
 			buildPhases = (
-				C4731116E0F094EE416EB4E878697336 /* Headers */,
-				15BCB3CBB2B4980A2FDFEFFE8545AF68 /* Sources */,
-				C4CC6708C5CD71201022AEDA60AFF651 /* Frameworks */,
-				5E633BD3B9A8DB96642075FB434F2834 /* Resources */,
+				9A3E85DD8FDADE76DD08227FDB1F83A5 /* Headers */,
+				2BF6887B1916796F78664DD7CCB025ED /* Sources */,
+				4195849161AED16B2AF76034160A7993 /* Frameworks */,
+				8883B65F93D8D4C7D5C7DAFA145173A7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D49F85C0AFBD96CF409141184B868EF5 /* PBXTargetDependency */,
-				B9C4EC072A209814901D2AD295496309 /* PBXTargetDependency */,
+				9CF5ACB6656A6FBA9AD10F223AC83034 /* PBXTargetDependency */,
+				463992ECC5F30369D15176DA42BB89E3 /* PBXTargetDependency */,
 			);
 			name = "Pods-GXVideoPlayer_Example";
 			productName = Pods_GXVideoPlayer_Example;
@@ -473,18 +472,18 @@
 		};
 		8D2ACB695137DE1DB8A991029DED8924 /* GXVideoPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FF7C8080A8CB5CF876AC1B6F6C0087F /* Build configuration list for PBXNativeTarget "GXVideoPlayer" */;
+			buildConfigurationList = F4FEA3841700F9BC7FCE1B018AF1C4D4 /* Build configuration list for PBXNativeTarget "GXVideoPlayer" */;
 			buildPhases = (
-				7B24055AE4583BDEBD411FCC90186B6D /* Headers */,
-				A4AA276DA0CA2FFB8C5E7757FAA7CC43 /* Sources */,
-				3044B9A136BE1A63F5E3337E82D8F32F /* Frameworks */,
-				5E9F31588411745D73E151D11D732EBD /* Resources */,
+				1120D794465C0F4C7C944089FDB1317E /* Headers */,
+				F26862F80BCBC2E318C8AF5CF85E4EA4 /* Sources */,
+				5D31BF263C77F931815AF3550026E783 /* Frameworks */,
+				84EB4B2065893648E7C14F126159C61D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8DF10413B83093BA98FAFAC4731101F0 /* PBXTargetDependency */,
-				8CFD711F8D6ABC68ED9F8194ECD918E2 /* PBXTargetDependency */,
+				361765A8C4D7BA48F96AC4AA37C563E3 /* PBXTargetDependency */,
+				4ABDC7D615AEA329C9795FC09CBAF151 /* PBXTargetDependency */,
 			);
 			name = GXVideoPlayer;
 			productName = GXVideoPlayer;
@@ -511,128 +510,129 @@
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 0EBC44856566226892C6AD99549A8963 /* Products */;
+			productRefGroup = 00331D9AA2CBC0C8A00EBCD9F6A38335 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				4CFBC77216475EE5B36C1F22DCEB7953 /* GXMasonry */,
 				8D2ACB695137DE1DB8A991029DED8924 /* GXVideoPlayer */,
 				4E2D0228FD3894F9E8E687C1E2543251 /* GXVideoPlayer-GXVideoPlayer */,
-				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				63004CF52CCCFB2DFE01235F76FB0109 /* Pods-GXVideoPlayer_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0DD44CCFDCF1763DB7C9BD9326CABB93 /* Resources */ = {
+		4D28F290BFE8EFD2B29E2AC4776ABE80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503A75920BC3EE5B2D040162AE385ED3 /* WMPlayer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EB4B2065893648E7C14F126159C61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F2D20D48081B7CF4BC23CBA471F749 /* GXVideoPlayer-GXVideoPlayer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8883B65F93D8D4C7D5C7DAFA145173A7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E633BD3B9A8DB96642075FB434F2834 /* Resources */ = {
+		CCC1427E9E776A95FA184AE4BAB584F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E9F31588411745D73E151D11D732EBD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D4F8801A474E2AF35E40248628D3B2C /* GXVideoPlayer-GXVideoPlayer in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EA02EE0DBC0E64AD5B2EBC5A60765C5E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A32553A7065F1683C82DF4235D2D2427 /* WMPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		15BCB3CBB2B4980A2FDFEFFE8545AF68 /* Sources */ = {
+		2BF6887B1916796F78664DD7CCB025ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09397B41D59B46E7D178DD24FB0572E1 /* Pods-GXVideoPlayer_Example-dummy.m in Sources */,
+				C0FF7D56124C50BABD9FA00D29C0B932 /* Pods-GXVideoPlayer_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		166BB1070CCAC8BD94D696D3D7CFF7D5 /* Sources */ = {
+		7AD55E15B255701629BEF493B1039923 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837E30F4C8B389DA9E8EDA4C7977F098 /* MASCompositeConstraint.m in Sources */,
-				3F25636BF04ECD6880F313F1253F88F2 /* MASConstraint.m in Sources */,
-				148E9B3E36A51CE73E769292E5F37F6D /* MASConstraintMaker.m in Sources */,
-				60FB95A1EB77A55D52BBFF725D47AEBD /* MASLayoutConstraint.m in Sources */,
-				CC73DD6D8CC4A2747E2849D2C51DB1DB /* Masonry-dummy.m in Sources */,
-				E2E55C95BEE6F258A6D2872729D2D0BC /* MASViewAttribute.m in Sources */,
-				C5E7B23DCA9BE77FDF84FD78DCEE8B89 /* MASViewConstraint.m in Sources */,
-				D2E6472837B4E3788B05F0AA1A1A53C9 /* NSArray+MASAdditions.m in Sources */,
-				6E9730FD00BC4C25ECC33E8F17BDF5DE /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				DA89DD9A6FD1672929B5911138911814 /* View+MASAdditions.m in Sources */,
-				BA05136435183D72AC0AC1DB36775CE9 /* ViewController+MASAdditions.m in Sources */,
+				67AE3946BB6ADF4DACFBE8CB2311489B /* GXMasonry-dummy.m in Sources */,
+				1BE185A08D91AAC2C5FAECE0D01D643F /* MASCompositeConstraint.m in Sources */,
+				8A4B2A297ADEF2D4F677363F6043970F /* MASConstraint.m in Sources */,
+				4AD60F4A2FED7D3818684C3D56060340 /* MASConstraintMaker.m in Sources */,
+				F26B60B55161A47DB5194AD1EF2828E3 /* MASLayoutConstraint.m in Sources */,
+				2BEEE0D17907F2DC20036B898A918A48 /* MASViewAttribute.m in Sources */,
+				4FCB44FA7219E201955085D9C8CDD884 /* MASViewConstraint.m in Sources */,
+				5351ED9B0A6023EE37D0F52138F8987C /* NSArray+MASAdditions.m in Sources */,
+				8E495F877947C9F633E29EFB593A58BA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				A563FEF541EE6706A7AC8B3B30ACC273 /* ReplaceMe.m in Sources */,
+				F698599C368BC3901F62B00B0F5639D1 /* View+MASAdditions.m in Sources */,
+				5EDD9DCE10811797F2D4CB5FB7CB644A /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E7F0DA2B55550DC4600938619F11B57 /* Sources */ = {
+		C7DD25EC2B08C3D584375F0614A8709C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4AA276DA0CA2FFB8C5E7757FAA7CC43 /* Sources */ = {
+		F26862F80BCBC2E318C8AF5CF85E4EA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				895689E41A093F833C394F0F9A23686A /* FastForwardView.m in Sources */,
-				C21D6A8B08684C6D50D4778BD4D7612E /* GXVideoPlayer-dummy.m in Sources */,
-				596ACD3B751E69EAF75DDE7DB14DFCE6 /* WMLightView.m in Sources */,
-				7A57243AACE603C8E32D0DE303C3E9C0 /* WMPlayer.m in Sources */,
-				1CEC966A1907AB26B1C7623E1FB98A92 /* WMPlayerModel.m in Sources */,
+				BF2EE66F9ECFE3A9A79E5179D1D66C6F /* FastForwardView.m in Sources */,
+				529377C423905C833719D8CEC6FA2426 /* GXVideoPlayer-dummy.m in Sources */,
+				435ADB7C4F1156B3BAF09FCBA01EF435 /* WMLightView.m in Sources */,
+				0BFF180167225FDE009A623CF7E9D91A /* WMPlayer.m in Sources */,
+				00EC96A99AC01F65753C136210BC23A7 /* WMPlayerModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8CFD711F8D6ABC68ED9F8194ECD918E2 /* PBXTargetDependency */ = {
+		361765A8C4D7BA48F96AC4AA37C563E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = FFC817A004173B7792F43B309815C7C2 /* PBXContainerItemProxy */;
+			name = GXMasonry;
+			target = 4CFBC77216475EE5B36C1F22DCEB7953 /* GXMasonry */;
+			targetProxy = 054A34D0621B9C1F44B55B14C0439A21 /* PBXContainerItemProxy */;
 		};
-		8DF10413B83093BA98FAFAC4731101F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "GXVideoPlayer-GXVideoPlayer";
-			target = 4E2D0228FD3894F9E8E687C1E2543251 /* GXVideoPlayer-GXVideoPlayer */;
-			targetProxy = 42010A6739F05C3AE48815E3C0D5A9E2 /* PBXContainerItemProxy */;
-		};
-		B9C4EC072A209814901D2AD295496309 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 5990E18E4113042A8DD306647906B5A6 /* PBXContainerItemProxy */;
-		};
-		D49F85C0AFBD96CF409141184B868EF5 /* PBXTargetDependency */ = {
+		463992ECC5F30369D15176DA42BB89E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GXVideoPlayer;
 			target = 8D2ACB695137DE1DB8A991029DED8924 /* GXVideoPlayer */;
-			targetProxy = FDFA5D76E5193C953DD4C47E5C77EB2E /* PBXContainerItemProxy */;
+			targetProxy = B0F9369DCD8F49AC67A170C071310293 /* PBXContainerItemProxy */;
+		};
+		4ABDC7D615AEA329C9795FC09CBAF151 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GXVideoPlayer-GXVideoPlayer";
+			target = 4E2D0228FD3894F9E8E687C1E2543251 /* GXVideoPlayer-GXVideoPlayer */;
+			targetProxy = C50A9C3C8C7D6F87CA850434BBF6579E /* PBXContainerItemProxy */;
+		};
+		9CF5ACB6656A6FBA9AD10F223AC83034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GXMasonry;
+			target = 4CFBC77216475EE5B36C1F22DCEB7953 /* GXMasonry */;
+			targetProxy = 1FA00ADDF21E8853B6D0D909F844DECE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C6054FCEE2DB14705A872FA887AAEA8 /* Debug */ = {
+		1E6342CA6ED9D436F389A78E9531063D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B73A19B941891A64AABD4BDD4FC1FAC2 /* GXVideoPlayer.debug.xcconfig */;
 			buildSettings = {
@@ -643,7 +643,7 @@
 				DEVELOPMENT_TEAM = M6KU4P4925;
 				IBSC_MODULE = GXVideoPlayer;
 				INFOPLIST_FILE = "Target Support Files/GXVideoPlayer/ResourceBundle-GXVideoPlayer-GXVideoPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = GXVideoPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -652,213 +652,7 @@
 			};
 			name = Debug;
 		};
-		10C6D2AE94317EEF4919F58539D0DD64 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54606C8F4EAE23CE41EA752AEAF8C905 /* GXVideoPlayer.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/GXVideoPlayer/GXVideoPlayer-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer.modulemap";
-				PRODUCT_MODULE_NAME = GXVideoPlayer;
-				PRODUCT_NAME = GXVideoPlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		11515784E0345CA84408FB0502FDEFEE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B73A19B941891A64AABD4BDD4FC1FAC2 /* GXVideoPlayer.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/GXVideoPlayer/GXVideoPlayer-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer.modulemap";
-				PRODUCT_MODULE_NAME = GXVideoPlayer;
-				PRODUCT_NAME = GXVideoPlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1DDE28952EB3B1B2E0DF05093DD84A13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		AF979701ACF360D7DD89C533EA7C6898 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24182BC8F09D59CBD011BB6659A1D998 /* Pods-GXVideoPlayer_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-GXVideoPlayer_Example/Pods-GXVideoPlayer_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GXVideoPlayer_Example/Pods-GXVideoPlayer_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -911,7 +705,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -924,11 +718,12 @@
 			};
 			name = Debug;
 		};
-		C4CB4E076DE09D2D583133A5480CCB2F /* Release */ = {
+		36C843EA9FEBFF5A0D2B92576C675650 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */;
+			baseConfigurationReference = 54606C8F4EAE23CE41EA752AEAF8C905 /* GXVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -939,20 +734,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/GXVideoPlayer/GXVideoPlayer-prefix.pch";
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
+				MODULEMAP_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer.modulemap";
+				PRODUCT_MODULE_NAME = GXVideoPlayer;
+				PRODUCT_NAME = GXVideoPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -960,7 +755,177 @@
 			};
 			name = Release;
 		};
-		D512677A89A53069592E19BA9C299D22 /* Release */ = {
+		41694218C8E8E38A2AD347D8FB2BE6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24182BC8F09D59CBD011BB6659A1D998 /* Pods-GXVideoPlayer_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-GXVideoPlayer_Example/Pods-GXVideoPlayer_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GXVideoPlayer_Example/Pods-GXVideoPlayer_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C774B23DC8290933E82F54D5C860461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1626A9161E2DD2BEA383BD493754F9C /* GXMasonry.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GXMasonry/GXMasonry-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GXMasonry/GXMasonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GXMasonry/GXMasonry.modulemap";
+				PRODUCT_MODULE_NAME = GXMasonry;
+				PRODUCT_NAME = GXMasonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		98F26CE22AAAD421DC9B85375BBF02EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73A19B941891A64AABD4BDD4FC1FAC2 /* GXVideoPlayer.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GXVideoPlayer/GXVideoPlayer-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GXVideoPlayer/GXVideoPlayer.modulemap";
+				PRODUCT_MODULE_NAME = GXVideoPlayer;
+				PRODUCT_NAME = GXVideoPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8602BC6E46D3655A539ECCB5BF105C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 54606C8F4EAE23CE41EA752AEAF8C905 /* GXVideoPlayer.release.xcconfig */;
 			buildSettings = {
@@ -971,7 +936,7 @@
 				DEVELOPMENT_TEAM = M6KU4P4925;
 				IBSC_MODULE = GXVideoPlayer;
 				INFOPLIST_FILE = "Target Support Files/GXVideoPlayer/ResourceBundle-GXVideoPlayer-GXVideoPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = GXVideoPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -980,7 +945,7 @@
 			};
 			name = Release;
 		};
-		F5A9FD476FD6D920A1BB26B0139EA2F4 /* Release */ = {
+		C65ACF1110CB2617A00010E1DC9C718E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5766E68E41CA795193A126CA9C70B257 /* Pods-GXVideoPlayer_Example.release.xcconfig */;
 			buildSettings = {
@@ -999,7 +964,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-GXVideoPlayer_Example/Pods-GXVideoPlayer_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GXVideoPlayer_Example/Pods-GXVideoPlayer_Example.modulemap";
@@ -1017,50 +982,87 @@
 			};
 			name = Release;
 		};
+		CC0BF207C4D9F2A6181949141EB03C1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F5DA7EB865AE411BFA0F47E63C4E455 /* GXMasonry.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/GXMasonry/GXMasonry-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/GXMasonry/GXMasonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GXMasonry/GXMasonry.modulemap";
+				PRODUCT_MODULE_NAME = GXMasonry;
+				PRODUCT_NAME = GXMasonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FF7C8080A8CB5CF876AC1B6F6C0087F /* Build configuration list for PBXNativeTarget "GXVideoPlayer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				11515784E0345CA84408FB0502FDEFEE /* Debug */,
-				10C6D2AE94317EEF4919F58539D0DD64 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B76C9568CB75444D0865C6C8C9DB487 /* Build configuration list for PBXNativeTarget "GXVideoPlayer-GXVideoPlayer" */ = {
+		789BD73DA415074E1663F89EB318B038 /* Build configuration list for PBXNativeTarget "GXVideoPlayer-GXVideoPlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C6054FCEE2DB14705A872FA887AAEA8 /* Debug */,
-				D512677A89A53069592E19BA9C299D22 /* Release */,
+				1E6342CA6ED9D436F389A78E9531063D /* Debug */,
+				B8602BC6E46D3655A539ECCB5BF105C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CE7C70CE90D67677D09B9A49D9DF99D /* Build configuration list for PBXNativeTarget "Pods-GXVideoPlayer_Example" */ = {
+		9622991B32B113716E46618D3A845497 /* Build configuration list for PBXNativeTarget "GXMasonry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF979701ACF360D7DD89C533EA7C6898 /* Debug */,
-				F5A9FD476FD6D920A1BB26B0139EA2F4 /* Release */,
+				5C774B23DC8290933E82F54D5C860461 /* Debug */,
+				CC0BF207C4D9F2A6181949141EB03C1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D87288151F99AC48DDFF5EE528A20C82 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+		C5A014F0F09EBCC8444EEFE789554D6B /* Build configuration list for PBXNativeTarget "Pods-GXVideoPlayer_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DDE28952EB3B1B2E0DF05093DD84A13 /* Debug */,
-				C4CB4E076DE09D2D583133A5480CCB2F /* Release */,
+				41694218C8E8E38A2AD347D8FB2BE6F1 /* Debug */,
+				C65ACF1110CB2617A00010E1DC9C718E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4FEA3841700F9BC7FCE1B018AF1C4D4 /* Build configuration list for PBXNativeTarget "GXVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F26CE22AAAD421DC9B85375BBF02EB /* Debug */,
+				36C843EA9FEBFF5A0D2B92576C675650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

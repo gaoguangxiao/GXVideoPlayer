@@ -13,7 +13,7 @@
 
 
 #import "WMPlayer.h"
-#import "Masonry.h"
+#import "GXMasonry/Masonry.h"
 
 //****************************宏*********************************
 #define WMPlayerSrcName(file) [@"WMPlayer.bundle" stringByAppendingPathComponent:file]
@@ -593,9 +593,9 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
             self.player.rate = _rate;
             //1、WMPlayer play----timeControlStatus;1【AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate】
 //            缓冲不足：播放器在缓冲区中没有足够的数据时，会进入 WaitingToPlayAtSpecifiedRate 状态。
-            NSLog(@"WMPlayer play----%ld,rate:%f",(long)self.player.timeControlStatus,self.player.rate);
+//            NSLog(@"WMPlayer play----%ld,rate:%f",(long)self.player.timeControlStatus,self.player.rate);
         }else if(self.state ==WMPlayerStateFinished){
-            NSLog(@"fffff");
+//            NSLog(@"fffff");
         }
     }
 }

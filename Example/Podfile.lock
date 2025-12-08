@@ -1,23 +1,23 @@
 PODS:
-  - GXVideoPlayer (0.3.2):
-    - Masonry
-  - Masonry (1.1.0)
+  - GXMasonry (2.1.0)
+  - GXVideoPlayer (0.3.4):
+    - GXMasonry
 
 DEPENDENCIES:
   - GXVideoPlayer (from `../`)
 
 SPEC REPOS:
   trunk:
-    - Masonry
+    - GXMasonry
 
 EXTERNAL SOURCES:
   GXVideoPlayer:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GXVideoPlayer: 93ffe564b255a7eb94a68a1910eee37a3b18e477
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  GXMasonry: 0cf681981f960deff6ef78a29e4c98319b903f3a
+  GXVideoPlayer: 6f2ee0bfde7bf08a94c793633c57298bc6aebf17
 
-PODFILE CHECKSUM: c95fbd855aae9033724611e651603d3563c18341
+PODFILE CHECKSUM: bb83b66d193392454b5b073b30e1b3eb21fb71a9
 
 COCOAPODS: 1.16.2

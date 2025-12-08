@@ -1,6 +1,6 @@
 {
   "name": "GXVideoPlayer",
-  "version": "0.3.2",
+  "version": "0.3.4",
   "summary": "change:跳过按钮边框宽度为1.0",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/GXVideoPlayer.git",
-    "tag": "0.3.2"
+    "tag": "0.3.4"
   },
   "platforms": {
     "ios": "11.0"
@@ -27,7 +27,7 @@
     ]
   },
   "dependencies": {
-    "Masonry": []
+    "GXMasonry": []
   },
   "swift_version": "5.0"
 }
