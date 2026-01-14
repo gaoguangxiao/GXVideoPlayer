@@ -174,7 +174,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = M6KU4P4925;
+						DevelopmentTeam = 39G4HKQ3KZ;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -393,7 +393,7 @@
 			baseConfigurationReference = 91866E41472E862A10F36B5C /* Pods-GXVideoPlayer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M6KU4P4925;
+				DEVELOPMENT_TEAM = 39G4HKQ3KZ;
 				INFOPLIST_FILE = GXVideoPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,7 +413,7 @@
 			baseConfigurationReference = 9D6F3DA228025C60AF194913 /* Pods-GXVideoPlayer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = M6KU4P4925;
+				DEVELOPMENT_TEAM = 39G4HKQ3KZ;
 				INFOPLIST_FILE = GXVideoPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

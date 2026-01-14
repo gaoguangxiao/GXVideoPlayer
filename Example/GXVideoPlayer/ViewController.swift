@@ -24,6 +24,7 @@ class ViewController: UIViewController, WMPlayerDelegate {
         if let pv = playerView {
             pv.resetWMPlayer()
             pv.removeFromSuperview()
+            playerView = nil
         }
         guard var urlStr = Bundle.main.path(forResource: "111", ofType: "mov") else { return }
         var videoUrl : URL?
@@ -33,10 +34,10 @@ class ViewController: UIViewController, WMPlayerDelegate {
             // Fallback on earlier versions
             videoUrl = URL(fileURLWithPath: urlStr)
         }
-        urlStr = "https://www.apple.com/105/media/us/iphone-x/2017/01df5b43-28e4-4848-bf20-490c34a926a7/films/feature/iphone-x-feature-tpl-cc-us-20170912_1280x720h.mp4"
+        urlStr = "https://assessment-file.risekid.cn/1768285680597.mp4"
         videoUrl = URL(string: urlStr)
         
-        playerView = WMPlayer(frame: CGRectMake(0, 0, UIScreen.main.bounds.size.width, 250))
+        playerView = WMPlayer(frame: CGRectMake(50, 0, UIScreen.main.bounds.size.width - 100, 200))
         playerView?.delegate = self
         if let playUrl = videoUrl , let pView = playerView{
             let playerModel: WMPlayerModel = WMPlayerModel.init()

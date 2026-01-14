@@ -775,12 +775,12 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     }
     
     //添加监听
-    [self.player addObserver:self forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
+//    [self.player addObserver:self forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
     
     //ios10新添加的属性，如果播放不了，可以试试打开这个代码
-//    if ([self.player respondsToSelector:@selector(automaticallyWaitsToMinimizeStalling)]) {
-//        self.player.automaticallyWaitsToMinimizeStalling = YES;
-//    }
+    if ([self.player respondsToSelector:@selector(automaticallyWaitsToMinimizeStalling)]) {
+        self.player.automaticallyWaitsToMinimizeStalling = YES;
+    }
     //外部投屏播放默认为NO
 //    self.player.usesExternalPlaybackWhileExternalScreenIsActive=YES;
     //AVPlayerLayer
@@ -955,7 +955,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 #pragma mark
 #pragma mark--播放失败
 - (void)moviePlayDidFailedToEnd:(NSNotification *)notification {
-//    NSLog(@"WMPlayer moviePlayDidFailedToEnd");
+    NSLog(@"WMPlayer moviePlayDidFailedToEnd");
 }
 
 #pragma mark--播放完成
@@ -1126,8 +1126,10 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                         
                     }else{
                         self.rate = [self.rateBtn.currentTitle floatValue];
+                        [self.player play];
+                        NSLog(@"self.player play");
                     }
-//                    NSLog(@"WMPlayer ReadyToPlay----dutaion:%f",self.duration);
+                    NSLog(@"WMPlayer ReadyToPlay----dutaion:%f",self.duration);
                 }
                     break;
                     
@@ -1202,20 +1204,20 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
             }
         }
     } else {
-        if ([keyPath isEqualToString:@"timeControlStatus"]) {
-            switch (_player.timeControlStatus) {
-                case AVPlayerTimeControlStatusPaused:
+//        if ([keyPath isEqualToString:@"timeControlStatus"]) {
+//            switch (_player.timeControlStatus) {
+//                case AVPlayerTimeControlStatusPaused:
 //                    NSLog(@"AVPlayerTimeControlStatusPaused");
-                    break;
-                case AVPlayerTimeControlStatusPlaying:
+//                    break;
+//                case AVPlayerTimeControlStatusPlaying:
 //                    NSLog(@"AVPlayerTimeControlStatusPlaying");
-                    break;
-                case AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate:
+//                    break;
+//                case AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate:
 //                    NSLog(@"AVPlayerTimeControlStatusWaitingToPlayAtSpecifiedRate");
-                default:
-                    break;
-            }
-        }
+//                default:
+//                    break;
+//            }
+//        }
     }
 }
 //缓冲回调
@@ -1533,7 +1535,7 @@ NSString * calculateTimeWithTimeFormatter(long long timeSecond){
     [self.player.currentItem.asset cancelLoading];
     [self.player pause];
     [self.player removeTimeObserver:self.playbackTimeObserver];
-    [self.player removeObserver:self forKeyPath:@"timeControlStatus"];
+//    [self.player removeObserver:self forKeyPath:@"timeControlStatus"];
     
     //移除观察者
     [_currentItem removeObserver:self forKeyPath:@"status"];
