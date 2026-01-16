@@ -14,7 +14,7 @@
 
 #import "WMPlayer.h"
 #import "GXMasonry/Masonry.h"
-
+#import <SDWebImage/UIImageView+WebCache.h>
 //****************************宏*********************************
 #define WMPlayerSrcName(file) [@"WMPlayer.bundle" stringByAppendingPathComponent:file]
 #define WMPlayerFrameworkSrcName(file) [@"Frameworks/GXVideoPlayer.framework/GXVideoPlayer.bundle/WMPlayer.bundle" stringByAppendingPathComponent:file]
@@ -32,6 +32,8 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 @interface WMPlayer () <UIGestureRecognizerDelegate>
 //顶部&底部操作工具栏
 @property (nonatomic,retain) UIImageView *topView,*bottomView;
+//预览图层
+@property (nonatomic, strong) UIImageView *previewImageView;
 //是否初始化了播放器
 @property (nonatomic,assign) BOOL  isInitPlayer;
 //用来判断手势是否移动过
@@ -70,8 +72,12 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 @property (nonatomic,strong) WMLightView * lightView;
 //这个用来显示滑动屏幕时的时间
 @property (nonatomic,strong) FastForwardView * FF_View;
+//加载失败按钮
+@property (nonatomic, strong) UIButton *loadFailedButton;
+//加载失败label
+@property (nonatomic, strong) UILabel *loadFailedLabel;
 //显示播放时间的UILabel+加载失败的UILabel+播放视频的title
-@property (nonatomic,strong) UILabel   *leftTimeLabel,*rightTimeLabel,*titleLabel,*loadFailedLabel;
+@property (nonatomic,strong) UILabel   *leftTimeLabel,*rightTimeLabel,*titleLabel;
 //控制全屏和播放暂停按钮
 @property (nonatomic,strong) UIButton  *fullScreenBtn,*playOrPauseBtn,*lockBtn,*backBtn,*skipBtn,*rateBtn;
 //进度滑块&声音滑块
@@ -136,6 +142,22 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     }
     return _videoGravity;
 }
+- (UIImageView *)previewImageView {
+    if (!_previewImageView) {
+        _previewImageView = [[UIImageView alloc]init];
+        _previewImageView.hidden = YES;
+    }
+    return _previewImageView;
+}
+
+- (UIButton *)loadFailedButton {
+    if (!_loadFailedButton) {
+        _loadFailedButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_loadFailedButton setImage:WMPlayerImage(@"ic_video_refresh") forState:UIControlStateNormal];
+        [_loadFailedButton addTarget:self action:@selector(refreshAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _loadFailedButton;
+}
 
 -(void)initWMPlayer{
     //    [UIApplication sharedApplication].idleTimerDisabled=YES;
@@ -148,6 +170,8 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     //    self.contentView.backgroundColor = [UIColor blackColor];
     [self addSubview:self.contentView];
     //    self.backgroundColor = [UIColor blackColor];
+    
+    [self.contentView addSubview:self.previewImageView];
     
     //创建fastForwardView，快进⏩和快退的view
     self.FF_View = [[FastForwardView alloc] init];
@@ -298,6 +322,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     self.loadFailedLabel.hidden = YES;
     [self.contentView addSubview:self.loadFailedLabel];
     
+    [self.contentView addSubview:self.loadFailedButton];
     //添加子控件的默认约束
     [self addUIControlConstraints];
     
@@ -329,6 +354,9 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 //添加控件的约束
 -(void)addUIControlConstraints{
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
+    [self.previewImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     [self.FF_View mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -408,6 +436,11 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     }];
     [self.loadFailedLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.contentView);
+    }];
+    [self.loadFailedButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.loadFailedLabel.mas_top).offset(-5);
+        make.centerX.mas_equalTo(self.contentView);
+        make.size.mas_equalTo(CGSizeMake(40, 40));
     }];
 }
 -(void)setRate:(CGFloat)rate{
@@ -515,7 +548,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     }
 }
 #pragma mark
-#pragma mark - 点击锁定🔒屏幕旋转
+#pragma mark 点击锁定🔒屏幕旋转
 -(void)lockAction:(UIButton *)sender{
     sender.selected = !sender.selected;
     self.isLockScreen = sender.selected;
@@ -523,6 +556,30 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
         [self.delegate wmplayer:self clickedLockButton:sender];
     }
 }
+
+#pragma mark 重新加载视频
+-(void)refreshAction:(UIButton *)sender{
+//    resetWMPlayer[()
+    [self resetWMPlayer];
+    
+    //
+    [self hiddenControlView];
+    
+    [self play];
+//    let playerModel: WMPlayerModel = WMPlayerModel.init()
+//    if let videoCacheUrl = self.cacheAudioFileUrl(url: videoModel.url) {
+//        playerModel.videoURL = videoCacheUrl.toFileUrl
+//    } else {
+//        playerModel.videoURL = URL(string: videoModel.url)
+//    }
+//        videoPlayer.enableSkipVideo = true
+//        videoPlayer.backBtnStyle = .pop
+    
+//    videoPlayer.playerModel = playerModel
+//    videoPlayer.play()
+//    block(CallWeb(callbackId: callbackId))
+}
+
 #pragma mark
 #pragma mark - 全屏按钮点击func
 -(void)fullScreenAction:(UIButton *)sender{
@@ -756,6 +813,9 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
 }
 -(void)creatWMPlayerAndReadyToPlay{
     self.isInitPlayer = YES;
+    self.loadFailedLabel.hidden = YES;
+    self.loadFailedButton.hidden = YES;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appWillEnterForeground:) name:UIApplicationWillEnterForegroundNotification object:nil];
     //耳机插入和拔掉通知
@@ -793,6 +853,11 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     //监听播放状态
     [self initTimer];
     [self.player play];
+    
+    if (self.videoPreviewURL) {
+        self.previewImageView.hidden = NO;
+        [self.previewImageView sd_setImageWithURL:self.videoPreviewURL];
+    }
 }
 
 //耳机插入、拔出事件
@@ -1129,6 +1194,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                         [self.player play];
                         NSLog(@"self.player play");
                     }
+                    self.previewImageView.hidden = YES;
                     NSLog(@"WMPlayer ReadyToPlay----dutaion:%f",self.duration);
                 }
                     break;
@@ -1140,13 +1206,16 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
                     }
                     NSError *error = [self.player.currentItem error];
                     if (error) {
+                        self.loadFailedButton.hidden = NO;
                         self.loadFailedLabel.hidden = NO;
                         self.loadFailedLabel.text = [NSString stringWithFormat:@"视频加载失败，%@",error.localizedDescription];
+                        [self bringSubviewToFront:self.loadFailedButton];
                         [self bringSubviewToFront:self.loadFailedLabel];
                         //here
                         [self.loadingView stopAnimating];
                     }
-                    NSLog(@"视频加载失败===%@",error.description);
+                    self.previewImageView.hidden = NO;
+                    NSLog(@"%@视频加载失败===%@",_videoURL,error.description);
                 }
                     break;
             }

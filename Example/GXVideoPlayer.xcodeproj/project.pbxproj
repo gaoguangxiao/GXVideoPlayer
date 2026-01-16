@@ -222,11 +222,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-GXVideoPlayer_Example/Pods-GXVideoPlayer_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GXMasonry/GXMasonry.framework",
 				"${BUILT_PRODUCTS_DIR}/GXVideoPlayer/GXVideoPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GXMasonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GXVideoPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

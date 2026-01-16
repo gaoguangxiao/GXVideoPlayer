@@ -1,7 +1,11 @@
 PODS:
   - GXMasonry (2.1.0)
-  - GXVideoPlayer (0.3.4):
+  - GXVideoPlayer (0.3.7):
     - GXMasonry
+    - SDWebImage
+  - SDWebImage (5.21.5):
+    - SDWebImage/Core (= 5.21.5)
+  - SDWebImage/Core (5.21.5)
 
 DEPENDENCIES:
   - GXVideoPlayer (from `../`)
@@ -9,6 +13,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - GXMasonry
+    - SDWebImage
 
 EXTERNAL SOURCES:
   GXVideoPlayer:
@@ -16,7 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GXMasonry: 0cf681981f960deff6ef78a29e4c98319b903f3a
-  GXVideoPlayer: 6f2ee0bfde7bf08a94c793633c57298bc6aebf17
+  GXVideoPlayer: 4f35c9df93e8e036725d8505df0e070dcd81d902
+  SDWebImage: e9c98383c7572d713c1a0d7dd2783b10599b9838
 
 PODFILE CHECKSUM: bb83b66d193392454b5b073b30e1b3eb21fb71a9
 

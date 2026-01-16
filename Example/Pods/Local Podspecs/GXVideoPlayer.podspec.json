@@ -1,7 +1,7 @@
 {
   "name": "GXVideoPlayer",
-  "version": "0.3.4",
-  "summary": "change:跳过按钮边框宽度为1.0",
+  "version": "0.3.7",
+  "summary": "change: 缓冲进度3秒之后播放",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/gaoguangxiao",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gaoguangxiao/GXVideoPlayer.git",
-    "tag": "0.3.4"
+    "tag": "0.3.7"
   },
   "platforms": {
     "ios": "11.0"
@@ -27,7 +27,8 @@
     ]
   },
   "dependencies": {
-    "GXMasonry": []
+    "GXMasonry": [],
+    "SDWebImage": []
   },
   "swift_version": "5.0"
 }

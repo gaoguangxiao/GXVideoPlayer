@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.3.7'
-  s.summary          = 'change: 缓冲进度3秒之后播放'
+  s.version          = '0.3.8'
+  s.summary          = 'change: 增加失败按钮'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -33,5 +33,5 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'GXMasonry'
-#  s.dependency 'SnapKit'
+  s.dependency 'SDWebImage'
 end
