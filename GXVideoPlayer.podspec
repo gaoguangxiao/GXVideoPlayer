@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GXVideoPlayer'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'change: 失败按钮出现问题'
 
 # This description is used to generate tags and improve search results.
