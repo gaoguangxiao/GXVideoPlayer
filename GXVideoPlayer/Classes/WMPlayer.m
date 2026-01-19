@@ -154,6 +154,7 @@ static void *PlayViewStatusObservationContext = &PlayViewStatusObservationContex
     if (!_loadFailedButton) {
         _loadFailedButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_loadFailedButton setImage:WMPlayerImage(@"ic_video_refresh") forState:UIControlStateNormal];
+        _loadFailedButton.hidden = YES;
         [_loadFailedButton addTarget:self action:@selector(refreshAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _loadFailedButton;
